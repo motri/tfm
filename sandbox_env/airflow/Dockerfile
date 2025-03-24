@@ -1,6 +1,6 @@
 FROM apache/airflow:2.5.1
 
-USER root
+USER airflow
 RUN pip install apache-airflow-providers-ssh
 USER airflow
 

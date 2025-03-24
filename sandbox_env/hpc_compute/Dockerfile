@@ -9,17 +9,15 @@ RUN apt-get update && apt-get install -y \
     sudo && \
     apt-get clean
 
-# Prepare SSH and Munge
 RUN mkdir /var/run/sshd
 RUN echo 'root:root' | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 
-# Create a directory for job scripts
-RUN mkdir -p /data/jobs
+# Create directory for Slurm's spool directory
+RUN mkdir -p /var/spool/slurmd
 
-# Copy start-up script
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
+COPY start.sh ./start.sh
+RUN chmod +x ./start.sh
 
 EXPOSE 22
-CMD ["/start.sh"]
+CMD ["start.sh"]

@@ -4,7 +4,7 @@ services:
     build: ./airflow
     container_name: airflow
     environment:
-      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////root/airflow/airflow.db
     volumes:
       - ./dags:/opt/airflow/dags
@@ -16,15 +16,15 @@ services:
       - hpc_net
 
   master:
-    build: ./hpc_master
+    build: ./hpc_main
     container_name: master
     hostname: master
     ports:
-      - "2222:22"   # Expose SSH if needed for debugging
+      - "5000:22"   # Expose SSH if needed for debugging
     volumes:
-      - ./hpc_master/data:/data
-      - ./hpc_master/munge.key:/etc/munge/munge.key
-      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf
+      - ./hpc_main/data:/data
+      - ./hpc_main/munge.key:/etc/munge/munge.key
+      - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf
     networks:
       - hpc_net
 
@@ -33,8 +33,8 @@ services:
     container_name: compute1
     hostname: compute1
     volumes:
-      - ./hpc_master/munge.key:/etc/munge/munge.key:ro
-      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
+      - ./hpc_main/munge.key:/etc/munge/munge.key:ro
+      - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
     networks:
       - hpc_net
 
@@ -43,8 +43,8 @@ services:
     container_name: compute2
     hostname: compute2
     volumes:
-      - ./hpc_master/munge.key:/etc/munge/munge.key:ro
-      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
+      - ./hpc_main/munge.key:/etc/munge/munge.key:ro
+      - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
     networks:
       - hpc_net
 
@@ -53,8 +53,8 @@ services:
     container_name: compute3
     hostname: compute3
     volumes:
-      - ./hpc_master/munge.key:/etc/munge/munge.key:ro
-      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
+      - ./hpc_main/munge.key:/etc/munge/munge.key:ro
+      - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
     networks:
       - hpc_net
 
