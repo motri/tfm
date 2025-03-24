@@ -1,0 +1,63 @@
+version: '3.8'
+services:
+  airflow:
+    build: ./airflow
+    container_name: airflow
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////root/airflow/airflow.db
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
+      - ./code:/opt/airflow/code
+    ports:
+      - "8080:8080"
+    networks:
+      - hpc_net
+
+  master:
+    build: ./hpc_master
+    container_name: master
+    hostname: master
+    ports:
+      - "2222:22"   # Expose SSH if needed for debugging
+    volumes:
+      - ./hpc_master/data:/data
+      - ./hpc_master/munge.key:/etc/munge/munge.key
+      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf
+    networks:
+      - hpc_net
+
+  compute1:
+    build: ./hpc_compute
+    container_name: compute1
+    hostname: compute1
+    volumes:
+      - ./hpc_master/munge.key:/etc/munge/munge.key:ro
+      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
+    networks:
+      - hpc_net
+
+  compute2:
+    build: ./hpc_compute
+    container_name: compute2
+    hostname: compute2
+    volumes:
+      - ./hpc_master/munge.key:/etc/munge/munge.key:ro
+      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
+    networks:
+      - hpc_net
+
+  compute3:
+    build: ./hpc_compute
+    container_name: compute3
+    hostname: compute3
+    volumes:
+      - ./hpc_master/munge.key:/etc/munge/munge.key:ro
+      - ./hpc_master/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
+    networks:
+      - hpc_net
+
+networks:
+  hpc_net:
+    driver: bridge
