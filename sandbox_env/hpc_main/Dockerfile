@@ -18,8 +18,8 @@ RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/
 RUN mkdir -p /data/jobs
 
 # Copy start-up script
-COPY start.sh ./start.sh
-RUN chmod +x ./start.sh
+COPY ./start.sh ./start.sh
+RUN chmod a+x ./start.sh
 
 EXPOSE 22
-CMD ["start.sh"]
+CMD ["./start.sh"]

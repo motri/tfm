@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting Munge..."
-service munge start
+sudo service munge start
 
 echo "Starting SSH..."
 service ssh start
