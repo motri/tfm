@@ -238,44 +238,41 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-  hpc_main:
-    build: ./hpc_main
-    container_name: hpc_main
-    hostname: hpc_main
-    ports:
-      - "5000:22"   # Expose SSH if needed for debugging
-    volumes:
-      - ./hpc_main/data:/data
-      - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf
-    networks:
-      - hpc_net
-
-  # compute1:
-  #   build: ./hpc_compute
-  #   container_name: compute1
-  #   hostname: compute1
-  #   volumes:
-  #     - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
-  #   networks:
-  #     - hpc_net
-
-  # compute2:
-  #   build: ./hpc_compute
-  #   container_name: compute2
-  #   hostname: compute2
-  #   volumes:
-  #     - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
-  #   networks:
-  #     - hpc_net
-
-  # compute3:
-  #   build: ./hpc_compute
-  #   container_name: compute3
-  #   hostname: compute3
-  #   volumes:
-  #     - ./hpc_main/slurm.conf:/etc/slurm-llnl/slurm.conf:ro
-  #   networks:
-  #     - hpc_net
+  slurmmaster:
+        build: ./master
+        hostname: slurmmaster
+        user: admin
+        volumes:
+                - shared-vol:/home/admin
+        ports:
+                - 6817:6817
+                - 6818:6818
+                - 6819:6819
+                - 5000:22
+  slurmnode1:
+        build: ./node
+        hostname: slurmnode1
+        user: admin
+        volumes:
+                - shared-vol:/home/admin
+        links:
+                - slurmmaster
+  slurmnode2:
+        build: ./node
+        hostname: slurmnode2
+        user: admin
+        volumes:
+                - shared-vol:/home/admin
+        links:
+                - slurmmaster
+  slurmnode3:
+        build: ./node
+        hostname: slurmnode3
+        user: admin
+        volumes:
+                - shared-vol:/home/admin
+        links:
+                - slurmmaster
 
 networks:
   hpc_net:
@@ -283,3 +280,4 @@ networks:
 
 volumes:
   postgres-db-volume:
+  shared-vol:
