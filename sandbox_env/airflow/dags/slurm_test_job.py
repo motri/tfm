@@ -26,7 +26,7 @@ with DAG(
     #SBATCH --ntasks=1 # Processors
     #SBATCH --time=10:00 # Walltime
     #SBATCH --mem-per-cpu=10M # Memory/cpu
-    #SBATCH --partition=compute # Queue
+    #SBATCH --partition=slurmpar # Queue
     srun sleep 30
     srun echo "My first serial Slurm job
     EOF
