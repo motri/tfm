@@ -1,0 +1,152 @@
+2025-03-26 12:20:22 compute2  | Starting Munge...
+2025-03-26 10:36:18 postgres-1  | 
+2025-03-26 10:36:18 postgres-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+2025-03-26 12:20:22 compute2    |  * Starting MUNGE munged
+2025-03-26 12:20:22 compute2    |    ...fail!
+2025-03-26 12:20:22 compute2    | munged: Error: Keyfile is insecure: "/etc/munge/munge.key" should be owned by UID 105
+2025-03-26 12:20:22 compute2    | Starting SSH...
+2025-03-26 12:20:22 compute2    |  * Starting OpenBSD Secure Shell server sshd
+2025-03-26 12:20:22 compute2    |    ...done.
+2025-03-26 12:20:22 compute2    | Starting Slurm Daemon (slurmd)...
+2025-03-26 12:20:22 compute2    |  * Starting slurm compute node daemon slurmd
+2025-03-26 12:20:31 compute2    |    ...fail!
+2025-03-26 12:20:31 compute2    | Compute node running. Tailing slurmd log...
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:23.937] error: Node configuration differs from hardware: Procs=2:6(hw) Boards=1:1(hw) SocketsPerBoard=2:1(hw) CoresPerSocket=1:6(hw) ThreadsPerCore=1:1(hw)
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:23.938] Message aggregation disabled
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.939] error: Unable to resolve "hpc_main": Host name lookup failure
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.939] CPU frequency setting not configured for this node
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.941] error: cgroup namespace 'freezer' not mounted. aborting
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.941] error: unable to create freezer cgroup namespace
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.941] error: Couldn't load specified plugin name for proctrack/cgroup: Plugin init() callback failed
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.941] error: cannot create proctrack context for proctrack/cgroup
+2025-03-26 12:20:31 compute2    | [2025-03-26T11:20:31.941] error: slurmd initialization failed
+2025-03-26 10:36:18 postgres-1  | 
+2025-03-26 10:36:18 postgres-1  | 2025-03-26 09:36:18.632 UTC [1] LOG:  starting PostgreSQL 13.20 (Debian 13.20-1.pgdg120+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14) 12.2.0, 64-bit
+2025-03-26 10:36:18 postgres-1  | 2025-03-26 09:36:18.632 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2025-03-26 10:36:18 postgres-1  | 2025-03-26 09:36:18.632 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2025-03-26 10:36:18 postgres-1  | 2025-03-26 09:36:18.635 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2025-03-26 10:36:18 postgres-1  | 2025-03-26 09:36:18.640 UTC [27] LOG:  database system was shut down at 2025-03-26 09:36:02 UTC
+2025-03-26 10:36:18 postgres-1  | 2025-03-26 09:36:18.653 UTC [1] LOG:  database system is ready to accept connections
+2025-03-26 12:20:27 compute1    | Starting Munge...
+2025-03-26 12:20:27 compute1    |  * Starting MUNGE munged
+2025-03-26 12:20:27 compute1    |    ...fail!
+2025-03-26 12:20:27 compute1    | munged: Error: Keyfile is insecure: "/etc/munge/munge.key" should be owned by UID 105
+2025-03-26 12:20:27 compute1    | Starting SSH...
+2025-03-26 12:20:28 compute1    |  * Starting OpenBSD Secure Shell server sshd
+2025-03-26 12:20:28 compute1    |    ...done.
+2025-03-26 12:20:28 compute1    | Starting Slurm Daemon (slurmd)...
+2025-03-26 12:20:28 compute1    |  * Starting slurm compute node daemon slurmd
+2025-03-26 12:20:32 compute1    |    ...fail!
+2025-03-26 12:20:32 compute1    | Compute node running. Tailing slurmd log...
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:28.934] error: Node configuration differs from hardware: Procs=2:6(hw) Boards=1:1(hw) SocketsPerBoard=2:1(hw) CoresPerSocket=1:6(hw) ThreadsPerCore=1:1(hw)
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:28.935] Message aggregation disabled
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:32.938] CPU frequency setting not configured for this node
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:32.938] error: cgroup namespace 'freezer' not mounted. aborting
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:32.938] error: unable to create freezer cgroup namespace
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:32.938] error: Couldn't load specified plugin name for proctrack/cgroup: Plugin init() callback failed
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:32.938] error: cannot create proctrack context for proctrack/cgroup
+2025-03-26 12:20:32 compute1    | [2025-03-26T11:20:32.938] error: slurmd initialization failed
+2025-03-26 12:20:29 hpc_main    | Starting Munge...
+2025-03-26 12:20:30 hpc_main    |  * Starting MUNGE munged
+2025-03-26 12:20:30 hpc_main    |    ...fail!
+2025-03-26 12:20:30 hpc_main    | munged: Error: Keyfile is insecure: "/etc/munge/munge.key" should be owned by UID 105
+2025-03-26 12:20:30 hpc_main    | Starting SSH...
+2025-03-26 12:20:30 hpc_main    |  * Starting OpenBSD Secure Shell server sshd
+2025-03-26 12:20:30 hpc_main    |    ...done.
+2025-03-26 12:20:30 hpc_main    | Starting Slurm Controller (slurmctld)...
+2025-03-26 12:20:30 hpc_main    |  * Starting slurm central management daemon slurmctld
+2025-03-26 12:20:31 hpc_main    |    ...done.
+2025-03-26 12:20:31 hpc_main    | Master node running. Tailing slurmctld log...
+2025-03-26 12:20:31 hpc_main    | [2025-03-26T11:20:31.047] error: Configured MailProg is invalid
+2025-03-26 12:20:31 hpc_main    | [2025-03-26T11:20:31.047] slurmctld version 19.05.5 started on cluster hpc_cluster
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.053] No memory enforcing mechanism configured.
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.053] layouts: no layout to initialize
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] layouts: loading entities/relations information
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] error: Could not open node state file /var/spool/slurmctld/node_state: No such file or directory
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] error: NOTE: Trying backup state save file. Information may be lost!
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] No node state file (/var/spool/slurmctld/node_state.old) to recover
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] error: Could not open job state file /var/spool/slurmctld/job_state: No such file or directory
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] error: NOTE: Trying backup state save file. Jobs may be lost!
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] No job state file (/var/spool/slurmctld/job_state.old) to recover
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] cons_res: select_p_node_init
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.059] cons_res: preparing for 1 partitions
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] error: Could not open reservation state file /var/spool/slurmctld/resv_state: No such file or directory
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] error: NOTE: Trying backup state save file. Reservations may be lost
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] No reservation state file (/var/spool/slurmctld/resv_state.old) to recover
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] error: Could not open trigger state file /var/spool/slurmctld/trigger_state: No such file or directory
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] error: NOTE: Trying backup state save file. Triggers may be lost!
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] No trigger state file (/var/spool/slurmctld/trigger_state.old) to recover
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] _preserve_plugins: backup_controller not specified
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] Reinitializing job accounting state
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] cons_res: select_p_reconfigure
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] cons_res: select_p_node_init
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] cons_res: preparing for 1 partitions
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.060] Running as primary controller
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.061] No parameter for mcs plugin, default values set
+2025-03-26 12:20:32 hpc_main    | [2025-03-26T11:20:31.061] mcs: MCSParameters = (null). ondemand set.
+2025-03-26 12:21:32 hpc_main    | [2025-03-26T11:21:31.232] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=2,partition_job_depth=0,sched_max_job_start=0,sched_min_interval=2
+2025-03-26 10:36:26 postgres-1  | 2025-03-26 09:36:26.269 UTC [41] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:36:26 postgres-1  | 2025-03-26 09:36:26.269 UTC [41] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:36:26.258300+00:00'::timestamptz, 'cli_check', 'root', '{"host_name": "6e31d7e7c1bf", "full_command": "[''/home/airflow/.local/bin/airflow'', ''db'', ''check'']"}') RETURNING log.id
+2025-03-26 10:36:30 postgres-1  | 2025-03-26 09:36:30.185 UTC [42] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:36:30 postgres-1  | 2025-03-26 09:36:30.185 UTC [42] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:36:30.175843+00:00'::timestamptz, 'cli_users_create', 'root', '{"host_name": "6e31d7e7c1bf", "full_command": "[''/home/airflow/.local/bin/airflow'', ''users'', ''create'', ''--username'', ''airflow'', ''--firstname'', ''Airflow'', ''--lastname'', ''Admin'', ''--email'', ''airflowadmin@example.com'', ''--role'', ''Admin'', ''--password'', ''********'']"}') RETURNING log.id
+2025-03-26 10:38:24 postgres-1  | 2025-03-26 09:38:24.790 UTC [131] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:38:24 postgres-1  | 2025-03-26 09:38:24.790 UTC [131] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:38:24.778888+00:00'::timestamptz, 'cli_check', 'root', '{"host_name": "ebc1a493a1bb", "full_command": "[''/home/airflow/.local/bin/airflow'', ''db'', ''check'']"}') RETURNING log.id
+2025-03-26 10:38:28 postgres-1  | 2025-03-26 09:38:28.518 UTC [132] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:38:28 postgres-1  | 2025-03-26 09:38:28.518 UTC [132] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:38:28.508431+00:00'::timestamptz, 'cli_users_create', 'root', '{"host_name": "ebc1a493a1bb", "full_command": "[''/home/airflow/.local/bin/airflow'', ''users'', ''create'', ''--username'', ''airflow'', ''--firstname'', ''Airflow'', ''--lastname'', ''Admin'', ''--email'', ''airflowadmin@example.com'', ''--role'', ''Admin'', ''--password'', ''********'']"}') RETURNING log.id
+2025-03-26 10:46:02 postgres-1  | 2025-03-26 09:46:02.030 UTC [463] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:46:02 postgres-1  | 2025-03-26 09:46:02.030 UTC [463] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:46:02.017889+00:00'::timestamptz, 'cli_check', 'root', '{"host_name": "ebc1a493a1bb", "full_command": "[''/home/airflow/.local/bin/airflow'', ''db'', ''check'']"}') RETURNING log.id
+2025-03-26 10:46:03 postgres-1  | 2025-03-26 09:46:03.823 UTC [464] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:46:03 postgres-1  | 2025-03-26 09:46:03.823 UTC [464] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:46:03.813028+00:00'::timestamptz, 'cli_users_create', 'root', '{"host_name": "ebc1a493a1bb", "full_command": "[''/home/airflow/.local/bin/airflow'', ''users'', ''create'', ''--username'', ''airflow'', ''--firstname'', ''Airflow'', ''--lastname'', ''Admin'', ''--email'', ''airflowadmin@example.com'', ''--role'', ''Admin'', ''--password'', ''********'']"}') RETURNING log.id
+2025-03-26 10:46:50 postgres-1  | 2025-03-26 09:46:50.955 UTC [504] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:46:50 postgres-1  | 2025-03-26 09:46:50.955 UTC [504] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:46:50.943672+00:00'::timestamptz, 'cli_check', 'root', '{"host_name": "ebc1a493a1bb", "full_command": "[''/home/airflow/.local/bin/airflow'', ''db'', ''check'']"}') RETURNING log.id
+2025-03-26 10:46:52 postgres-1  | 2025-03-26 09:46:52.661 UTC [505] ERROR:  relation "log" does not exist at character 13
+2025-03-26 10:46:52 postgres-1  | 2025-03-26 09:46:52.661 UTC [505] STATEMENT:  INSERT INTO log (dttm, event, owner, extra) VALUES ('2025-03-26T09:46:52.650893+00:00'::timestamptz, 'cli_users_create', 'root', '{"host_name": "ebc1a493a1bb", "full_command": "[''/home/airflow/.local/bin/airflow'', ''users'', ''create'', ''--username'', ''airflow'', ''--firstname'', ''Airflow'', ''--lastname'', ''Admin'', ''--email'', ''airflowadmin@example.com'', ''--role'', ''Admin'', ''--password'', ''********'']"}') RETURNING log.id
+2025-03-26 10:47:05 postgres-1  | 2025-03-26 09:47:05.986 UTC [1] LOG:  received fast shutdown request
+2025-03-26 10:47:05 postgres-1  | 2025-03-26 09:47:05.992 UTC [1] LOG:  aborting any active transactions
+2025-03-26 10:47:05 postgres-1  | 2025-03-26 09:47:05.994 UTC [1] LOG:  background worker "logical replication launcher" (PID 33) exited with exit code 1
+2025-03-26 10:47:05 postgres-1  | 2025-03-26 09:47:05.995 UTC [28] LOG:  shutting down
+2025-03-26 10:47:06 postgres-1  | 2025-03-26 09:47:06.015 UTC [1] LOG:  database system is shut down
+2025-03-26 12:20:23 compute3    | Starting Munge...
+2025-03-26 12:20:23 compute3    |  * Starting MUNGE munged
+2025-03-26 12:20:23 compute3    |    ...fail!
+2025-03-26 12:20:23 compute3    | munged: Error: Keyfile is insecure: "/etc/munge/munge.key" should be owned by UID 105
+2025-03-26 12:20:23 compute3    | Starting SSH...
+2025-03-26 12:20:23 compute3    |  * Starting OpenBSD Secure Shell server sshd
+2025-03-26 12:20:23 compute3    |    ...done.
+2025-03-26 12:20:23 compute3    | Starting Slurm Daemon (slurmd)...
+2025-03-26 12:20:23 compute3    |  * Starting slurm compute node daemon slurmd
+2025-03-26 12:20:32 compute3    |    ...fail!
+2025-03-26 12:20:32 compute3    | Compute node running. Tailing slurmd log...
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:24.291] error: Node configuration differs from hardware: Procs=2:6(hw) Boards=1:1(hw) SocketsPerBoard=2:1(hw) CoresPerSocket=1:6(hw) ThreadsPerCore=1:1(hw)
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:24.291] Message aggregation disabled
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.294] error: Unable to resolve "hpc_main": Host name lookup failure
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.295] CPU frequency setting not configured for this node
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.295] error: cgroup namespace 'freezer' not mounted. aborting
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.295] error: unable to create freezer cgroup namespace
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.295] error: Couldn't load specified plugin name for proctrack/cgroup: Plugin init() callback failed
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.295] error: cannot create proctrack context for proctrack/cgroup
+2025-03-26 12:20:32 compute3    | [2025-03-26T11:20:32.295] error: slurmd initialization failed
+2025-03-26 10:36:18 redis-1     | 1:C 26 Mar 2025 09:36:18.609 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2025-03-26 10:36:18 redis-1     | 1:C 26 Mar 2025 09:36:18.609 * Redis version=7.2.7, bits=64, commit=00000000, modified=0, pid=1, just started
+2025-03-26 10:36:18 redis-1     | 1:C 26 Mar 2025 09:36:18.609 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+2025-03-26 10:36:18 redis-1     | 1:M 26 Mar 2025 09:36:18.610 * monotonic clock: POSIX clock_gettime
+2025-03-26 10:36:18 redis-1     | 1:M 26 Mar 2025 09:36:18.610 * Running mode=standalone, port=6379.
+2025-03-26 10:36:18 redis-1     | 1:M 26 Mar 2025 09:36:18.611 * Server initialized
+2025-03-26 10:36:18 redis-1     | 1:M 26 Mar 2025 09:36:18.611 * Ready to accept connections tcp
+2025-03-26 10:47:05 redis-1     | 1:signal-handler (1742982425) Received SIGTERM scheduling shutdown...
+2025-03-26 10:47:06 redis-1     | 1:M 26 Mar 2025 09:47:06.060 * User requested shutdown...
+2025-03-26 10:47:06 redis-1     | 1:M 26 Mar 2025 09:47:06.060 * Saving the final RDB snapshot before exiting.
+2025-03-26 10:47:06 redis-1     | 1:M 26 Mar 2025 09:47:06.065 * DB saved on disk
+2025-03-26 10:47:06 redis-1     | 1:M 26 Mar 2025 09:47:06.065 # Redis is now ready to exit, bye bye...
+2025-03-26 10:38:22 airflow-init-1  | The container is run as root user. For security, consider using a regular user account.
+2025-03-26 10:38:24 airflow-init-1  | 
+2025-03-26 10:38:28 airflow-init-1  | ERROR: You need to initialize the database. Please run `airflow db init`. Make sure the command is run using Airflow version 2.5.1.
+2025-03-26 10:38:29 airflow-init-1  | 2.5.1
+2025-03-26 10:46:01 airflow-init-1  | The container is run as root user. For security, consider using a regular user account.
+2025-03-26 10:46:02 airflow-init-1  | 
+2025-03-26 10:46:03 airflow-init-1  | ERROR: You need to initialize the database. Please run `airflow db init`. Make sure the command is run using Airflow version 2.5.1.
+2025-03-26 10:46:04 airflow-init-1  | 2.5.1
+2025-03-26 10:46:50 airflow-init-1  | The container is run as root user. For security, consider using a regular user account.
+2025-03-26 10:46:51 airflow-init-1  | 
+2025-03-26 10:46:52 airflow-init-1  | ERROR: You need to initialize the database. Please run `airflow db init`. Make sure the command is run using Airflow version 2.5.1.
+2025-03-26 10:46:53 airflow-init-1  | 2.5.1
