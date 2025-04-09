@@ -1,0 +1,121 @@
+[2025-04-09T09:59:41.721+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-09T09:59:41.740+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-04-09T09:59:39.040054+00:00 [queued]>
+[2025-04-09T09:59:41.749+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-04-09T09:59:39.040054+00:00 [queued]>
+[2025-04-09T09:59:41.749+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-09T09:59:41.763+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-04-09 09:59:39.040054+00:00
+[2025-04-09T09:59:41.770+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=208) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-09T09:59:41.773+0000] {standard_task_runner.py:72} INFO - Started process 210 to run task
+[2025-04-09T09:59:41.774+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-04-09T09:59:39.040054+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmp94i4heue']
+[2025-04-09T09:59:41.776+0000] {standard_task_runner.py:105} INFO - Job 37: Subtask submit_slurm
+[2025-04-09T09:59:41.832+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-04-09T09:59:39.040054+00:00 [running]> on host 3f0a98f0bd17
+[2025-04-09T09:59:41.920+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='slurm_async_job' AIRFLOW_CTX_TASK_ID='submit_slurm' AIRFLOW_CTX_EXECUTION_DATE='2025-04-09T09:59:39.040054+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-09T09:59:39.040054+00:00'
+[2025-04-09T09:59:41.922+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-09T09:59:41.923+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-09T09:59:41.923+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-04-09 09:59:41.740815+00:00
+[2025-04-09T09:59:41.924+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-04-09T09:59:41.925+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-09T09:59:41.934+0000] {base.py:84} INFO - Retrieving connection 'hpc_ssh'
+[2025-04-09T09:59:41.935+0000] {ssh.py:286} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2025-04-09T09:59:42.028+0000] {transport.py:1944} INFO - Connected (version 2.0, client OpenSSH_8.0)
+[2025-04-09T09:59:42.485+0000] {transport.py:1944} INFO - Authentication (password) successful!
+[2025-04-09T09:59:44.215+0000] {slurm_operator.py:18} INFO - sbatch output: Submitted batch job 6674
+
+[2025-04-09T09:59:44.218+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-04-09T09:59:44.265+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-04-09T09:59:39.040054+00:00, execution_date=20250409T095939, start_date=20250409T095941
+[2025-04-09T09:59:44.266+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-09T09:59:44.297+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-04-09T09:59:44.297+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-04-09T09:59:50.326+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-09T09:59:50.346+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-04-09T09:59:39.040054+00:00 [queued]>
+[2025-04-09T09:59:50.355+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-04-09T09:59:39.040054+00:00 [queued]>
+[2025-04-09T09:59:50.356+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-04-09T09:59:50.371+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-04-09 09:59:39.040054+00:00
+[2025-04-09T09:59:50.380+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=214) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-09T09:59:50.383+0000] {standard_task_runner.py:72} INFO - Started process 216 to run task
+[2025-04-09T09:59:50.382+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-04-09T09:59:39.040054+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpm78g86ub']
+[2025-04-09T09:59:50.384+0000] {standard_task_runner.py:105} INFO - Job 38: Subtask submit_slurm
+[2025-04-09T09:59:50.436+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-04-09T09:59:39.040054+00:00 [running]> on host 3f0a98f0bd17
+[2025-04-09T09:59:50.510+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-04-09T09:59:50.511+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-04-09T09:59:50.512+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-04-09 09:59:41.740815+00:00
+[2025-04-09T09:59:50.513+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-04-09T09:59:50.513+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-09T09:59:50.514+0000] {taskinstance.py:3313} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1816, in resume_execution
+    return execute_callable(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/plugins/operators/slurm_operator.py", line 30, in execute_complete
+    raise Exception(f"SLURM job failed: {event.get('message', 'Unknown error')}")
+Exception: SLURM job failed: cannot access local variable 'e' where it is not associated with a value
+[2025-04-09T09:59:50.524+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-04-09T09:59:50.525+0000] {logging_mixin.py:190} INFO - Task start:2025-04-09 09:59:41.740815+00:00 end:2025-04-09 09:59:50.523820+00:00 duration:8.783005
+[2025-04-09T09:59:50.525+0000] {logging_mixin.py:190} INFO - Task:<Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> dag:<DAG: slurm_async_job> dagrun:<DagRun slurm_async_job @ 2025-04-09 09:59:39.040054+00:00: manual__2025-04-09T09:59:39.040054+00:00, state:running, queued_at: 2025-04-09 09:59:39.055311+00:00. externally triggered: True>
+[2025-04-09T09:59:50.526+0000] {logging_mixin.py:190} INFO - Failure caused by SLURM job failed: cannot access local variable 'e' where it is not associated with a value
+[2025-04-09T09:59:50.527+0000] {taskinstance.py:1226} INFO - Marking task as FAILED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-04-09T09:59:39.040054+00:00, execution_date=20250409T095939, start_date=20250409T095941, end_date=20250409T095950
+[2025-04-09T09:59:50.555+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-09T09:59:50.555+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 38 for task submit_slurm (SLURM job failed: cannot access local variable 'e' where it is not associated with a value; 216)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3006, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 274, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3161, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3185, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 768, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 734, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1816, in resume_execution
+    return execute_callable(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/plugins/operators/slurm_operator.py", line 30, in execute_complete
+    raise Exception(f"SLURM job failed: {event.get('message', 'Unknown error')}")
+Exception: SLURM job failed: cannot access local variable 'e' where it is not associated with a value
+[2025-04-09T09:59:50.605+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-04-09T09:59:50.630+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-04-09T09:59:50.633+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
