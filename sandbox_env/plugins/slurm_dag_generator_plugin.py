@@ -12,7 +12,7 @@ slurm_ui_blueprint = Blueprint(
 )
 
 # Your previously defined route can remain if you like:
-@slurm_ui_blueprint.route("/dag-config", methods=["GET", "POST"])
+@slurm_ui_blueprint.route("/", methods=["GET", "POST"])
 @csrf.exempt
 def submit_form():
     if request.method == "POST":
@@ -41,7 +41,7 @@ from flask_appbuilder import BaseView, expose
 class SlurmConfigView(BaseView):
     default_view = "dag_config"
 
-    @expose("/dag-config")
+    @expose("/")
     def dag_config(self):
         return self.render_template("dag_form.html")
 
