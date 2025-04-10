@@ -6,8 +6,6 @@ with DAG("slurm_async_job", start_date=datetime(2024, 1, 1), schedule_interval=N
     run_job = SubmitAndMonitorSlurmJobOperator(
         task_id='submit_slurm',
         ssh_conn_id='hpc_ssh',
-        qos='qos_di14',
-        name='nuevotest',
-        script_path='example_run.sh',
+        sbatch_args='--qos=qos_di14 example_run.sh',
         poll_interval=60
     )
