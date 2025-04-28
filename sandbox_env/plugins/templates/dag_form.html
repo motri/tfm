@@ -19,14 +19,12 @@
         Pull from Git repo?
       </label>
       <div id="repo_fields" style="margin-left: 1em;">
-        <label for="repo_type">Repo Type:</label>
-        <select name="repo_type" id="repo_type" style="width: 20%;">
-          <option value="gitlab">GitLab</option>
-          <option value="github">GitHub</option>
-        </select><br><br>
-
-        <label for="repo_url">Repo URL:</label>
+        <label for="repo_url">Repo URL (this assumes scripts will be in the /scripts/ path):</label>
         <input type="url" name="repo_url" id="repo_url" placeholder="https://gitlab.com/your/repo.git"><br><br>
+        <label for="user">HPC User:</label>
+        <input type="text" name="user" id="user"><br><br>
+        <label for="instance">Login instance number (01 or 02):</label>
+        <input type="text"><br><br>
       </div>
       <div id="arg_fields">
         <!-- Script file to run on HPC -->

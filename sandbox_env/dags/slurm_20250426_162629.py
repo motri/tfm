@@ -3,7 +3,7 @@ from airflow import DAG
 from datetime import datetime
 from airflow.operators.bash import BashOperator
 from airflow.providers.ssh.operators.ssh import SSHOperator
-from slurm_plugin.operators.slurm_operator import SubmitAndMonitorSlurmJobOperator
+from operators.slurm_operator import SubmitAndMonitorSlurmJobOperator
 
 # Default args for the DAG
 default_args = {

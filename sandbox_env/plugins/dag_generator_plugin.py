@@ -20,8 +20,9 @@ def submit_form():
     if request.method == "POST":
         # collect inputs
         download = request.form.get("download") == "true"
-        repo_type = request.form.get("repo_type")
         repo_url = request.form.get("repo_url")
+        user = request.form.get("user", "").strip()
+        instance = request.form.get("instance","").strip()
         script = request.form["script"]
         qos = request.form.get("qos", "").strip()
         job_name = request.form.get("job_name", "").strip()
@@ -32,13 +33,14 @@ def submit_form():
         now = datetime.now()
         dag_id = f"slurm_{now.strftime('%Y%m%d_%H%M%S')}"
         params = {
-            "owner": "data_scientist",
+            "owner": "tezt_user",
             "year": now.year, "month": now.month, "day": now.day,
             "dag_id": dag_id,
             "schedule_interval": "@once",
             "download": download,
-            "repo_type": repo_type,
             "repo_url": repo_url,
+            "user": user,
+            "instance": instance,
             "script": script,
             "qos": qos,
             "job_name": job_name,
