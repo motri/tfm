@@ -248,7 +248,7 @@ services:
                 - 6817:6817
                 - 6818:6818
                 - 6819:6819
-                - 5000:22
+                - 8000:22
   slurmnode1:
         build: ./node
         hostname: slurmnode1

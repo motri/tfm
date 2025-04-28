@@ -1,17 +1,67 @@
 {% extends base_template %}
 
+{% block head %}
+  {{ super() }}
+  <link
+    rel="stylesheet"
+    href="{{ url_for('slurm_ui.static', filename='style.css') }}"
+  >
+{% endblock %}
+
 {% block content %}
-<h1>SLURM DAG Configurator</h1>
-<form method="post">
-    <label for="qos">QoS (optional):</label>
-    <input type="text" name="qos" id="qos"><br><br>
-    
-    <label for="name">Job Name (optional):</label>
-    <input type="text" name="name" id="name"><br><br>
-    
-    <label for="script">Script File (required):</label>
-    <input type="text" name="script" id="script" required placeholder="example.sh"><br><br>
-    
-    <input type="submit" value="Generate DAG">
-</form>
+  <div class="form-container">
+    <h1>SLURM DAG Generator</h1>
+    <form method="post" action="{{ url_for('slurm_ui.submit_form') }}">
+
+      <!-- Download from Git repo option -->
+      <label>
+        <input type="checkbox" id="download" name="download" value="true">
+        Pull from Git repo?
+      </label>
+      <div id="repo_fields" style="margin-left: 1em;">
+        <label for="repo_type">Repo Type:</label>
+        <select name="repo_type" id="repo_type" style="width: 20%;">
+          <option value="gitlab">GitLab</option>
+          <option value="github">GitHub</option>
+        </select><br><br>
+
+        <label for="repo_url">Repo URL:</label>
+        <input type="url" name="repo_url" id="repo_url" placeholder="https://gitlab.com/your/repo.git"><br><br>
+      </div>
+      <div id="arg_fields">
+        <!-- Script file to run on HPC -->
+        <label for="script">Script File:</label>
+        <input type="text" name="script" id="script" required placeholder="example.sh"><br><br>
+
+        <!-- SSH connection ID -->
+        <label for="ssh_conn">SSH Connection ID:</label>
+        <input type="text" name="ssh_conn" id="ssh_conn" value="hpc_ssh" required><br><br>
+
+        <!-- QoS and Job Name -->
+        <label for="qos">QoS (optional):</label>
+        <input type="text" name="qos" id="qos"><br><br>
+
+        <label for="job_name">Job Name (optional):</label>
+        <input type="text" name="job_name" id="job_name"><br><br>
+
+        <!-- DAG Tags -->
+        <label for="dag_tags">DAG Tags (comma-separated):</label>
+        <input type="text" name="dag_tags" id="dag_tags" value="Generated"><br><br>
+
+        <input type="submit" value="Generate DAG">
+    </div>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const downloadCheckbox = document.getElementById('download');
+      const repoFields = document.getElementById('repo_fields');
+      function toggleRepoFields() {
+        repoFields.style.display = downloadCheckbox.checked ? 'block' : 'none';
+      }
+      downloadCheckbox.addEventListener('change', toggleRepoFields);
+      toggleRepoFields();
+    });
+  </script>
 {% endblock %}
