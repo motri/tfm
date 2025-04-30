@@ -23,7 +23,7 @@ with DAG(
     copy = SSHOperator(
         task_id="copy_to_hpc",
         ssh_conn_id="{{ ssh_conn }}",
-        command="scp /tmp/{{ dag_id }}_repo/scripts/{{ script }} {{ user }}@abacus-login-{{ instance }}:{{ script }}"
+        command="scp /tmp/{{ dag_id }}_repo/{{ script_path }}/{{ script }} {{ user }}@abacus-login-{{ instance }}:{{ script }}"
     )
 
     trigger_slur, = TriggerDagRunOperator(
@@ -31,6 +31,5 @@ with DAG(
         trigger_dag_id="{{ submit_dag_id }}",
         wait_for_completion=False
     )
-
 
 copy >> trigger_slurm

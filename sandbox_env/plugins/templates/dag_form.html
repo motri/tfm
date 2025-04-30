@@ -10,21 +10,32 @@
 
 {% block content %}
   <div class="form-container">
-    <h1>SLURM DAG Generator</h1>
-    <form method="post" action="{{ url_for('slurm_ui.submit_form') }}">
+    <div id="header" style="display: flex; padding-bottom: 10px; padding-top: 10px; background-color: #d7e7ee;">
+      <img src="{{url_for('slurm_ui.static', filename='Vicomtech_BRTA_RGB.png')}}" alt="Logo Vicomtech" width="180px">
+      <h1 style="padding-left: 10px; text-align: left;">Generador de DAGs para workflows de SLURM</h1>
+    </div>
+    <form method="post" action="{{ url_for('slurm_ui.submit_form') }}" style="padding: 10px;">
 
       <!-- Download from Git repo option -->
       <label>
         <input type="checkbox" id="download" name="download" value="true">
-        Pull from Git repo?
+        Pull script from Git repo?
       </label>
       <div id="repo_fields" style="margin-left: 1em;">
         <label for="repo_url">Repo URL (this assumes scripts will be in the /scripts/ path):</label>
         <input type="url" name="repo_url" id="repo_url" placeholder="https://gitlab.com/your/repo.git"><br><br>
+      </div>
+      <label>
+        <input type="checkbox" id="copy_local" name="copy_local" value="true">
+        Copy local script to HPC?
+      </label>
+      <div id="copy_fields">
+        <label for="path">Path to script (default /scripts/)</label>
+        <input type="text" name="script_path"><br><br>
         <label for="user">HPC User:</label>
-        <input type="text" name="user" id="user"><br><br>
-        <label for="instance">Login instance number (01 or 02):</label>
-        <input type="text"><br><br>
+        <input type="text" name="user"><br><br>
+        <label for="instance">HPC Login instance id (01 or 02):</label>
+        <input type="text" name="instance"><br><br>
       </div>
       <div id="arg_fields">
         <!-- Script file to run on HPC -->
@@ -53,13 +64,21 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const downloadCheckbox = document.getElementById('download');
       const repoFields = document.getElementById('repo_fields');
+      const downloadCheckbox = document.getElementById('download');
+      const copyLocalCheckbox = document.getElementById('copy_local');
+      const copyFields = document.getElementById('copy_fields');
       function toggleRepoFields() {
         repoFields.style.display = downloadCheckbox.checked ? 'block' : 'none';
       }
+      function toggleCopyFields(){
+        copyFields.style.display = downloadCheckbox.checked || copyLocalCheckbox.checked ? 'block' : 'none';
+      }
       downloadCheckbox.addEventListener('change', toggleRepoFields);
+      downloadCheckbox.addEventListener('change', toggleCopyFields)
+      copyLocalCheckbox.addEventListener('change', toggleCopyFields);
       toggleRepoFields();
+      toggleCopyFields()
     });
   </script>
 {% endblock %}

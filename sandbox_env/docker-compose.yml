@@ -239,41 +239,41 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-  slurmmaster:
-        build: ./master
-        hostname: slurmmaster
-        user: admin
-        volumes:
-                - shared-vol:/home/admin
-        ports:
-                - 6817:6817
-                - 6818:6818
-                - 6819:6819
-                - 8000:22
-  slurmnode1:
-        build: ./node
-        hostname: slurmnode1
-        user: admin
-        volumes:
-                - shared-vol:/home/admin
-        links:
-                - slurmmaster
-  slurmnode2:
-        build: ./node
-        hostname: slurmnode2
-        user: admin
-        volumes:
-                - shared-vol:/home/admin
-        links:
-                - slurmmaster
-  slurmnode3:
-        build: ./node
-        hostname: slurmnode3
-        user: admin
-        volumes:
-                - shared-vol:/home/admin
-        links:
-                - slurmmaster
+  # slurmmaster:
+  #       build: ./master
+  #       hostname: slurmmaster
+  #       user: admin
+  #       volumes:
+  #               - shared-vol:/home/admin
+  #       ports:
+  #               - 6817:6817
+  #               - 6818:6818
+  #               - 6819:6819
+  #               - 8000:22
+  # slurmnode1:
+  #       build: ./node
+  #       hostname: slurmnode1
+  #       user: admin
+  #       volumes:
+  #               - shared-vol:/home/admin
+  #       links:
+  #               - slurmmaster
+  # slurmnode2:
+  #       build: ./node
+  #       hostname: slurmnode2
+  #       user: admin
+  #       volumes:
+  #               - shared-vol:/home/admin
+  #       links:
+  #               - slurmmaster
+  # slurmnode3:
+  #       build: ./node
+  #       hostname: slurmnode3
+  #       user: admin
+  #       volumes:
+  #               - shared-vol:/home/admin
+  #       links:
+  #               - slurmmaster
 
 networks:
   hpc_net:
