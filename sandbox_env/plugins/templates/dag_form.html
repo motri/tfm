@@ -12,22 +12,22 @@
   <div class="form-container">
     <div id="header" style="display: flex; padding-bottom: 10px; padding-top: 10px; background-color: #d7e7ee;">
       <img src="{{url_for('slurm_ui.static', filename='Vicomtech_BRTA_RGB.png')}}" alt="Logo Vicomtech" width="180px">
-      <h1 style="padding-left: 10px; text-align: left;">Generador de DAGs para workflows de SLURM</h1>
+      <h1 style="align-self: center;">Generador de DAGs para workflows de SLURM</h1>
     </div>
     <form method="post" action="{{ url_for('slurm_ui.submit_form') }}" style="padding: 10px;">
 
       <!-- Download from Git repo option -->
       <label>
-        <input type="checkbox" id="download" name="download" value="true">
         Pull script from Git repo?
+        <input type="checkbox" id="download" name="download" value="true">
       </label>
       <div id="repo_fields" style="margin-left: 1em;">
         <label for="repo_url">Repo URL (this assumes scripts will be in the /scripts/ path):</label>
         <input type="url" name="repo_url" id="repo_url" placeholder="https://gitlab.com/your/repo.git"><br><br>
       </div>
       <label>
-        <input type="checkbox" id="copy_local" name="copy_local" value="true">
         Copy local script to HPC?
+        <input type="checkbox" id="copy_local" name="copy_local" value="true">
       </label>
       <div id="copy_fields">
         <label for="path">Path to script (default /scripts/)</label>
