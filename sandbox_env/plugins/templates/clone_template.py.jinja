@@ -1,0 +1,31 @@
+{# File: clone_template.py.jinja #}
+from airflow import DAG
+from datetime import datetime
+from airflow.operators.bash import BashOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+
+default_args = {
+    'owner': '{{ owner }}',
+    'start_date': datetime({{ year }}, {{ month }}, {{ day }}),
+    'retries': 0
+}
+
+with DAG(
+    dag_id="{{ clone_dag_id }}",
+    default_args=default_args,
+    schedule_interval="{{ schedule_interval }}",
+    catchup=False
+) as dag:
+
+    clone = BashOperator(
+        task_id="clone_repo",
+        bash_command="git clone {{ repo_url }} /tmp/{{ dag_id }}_repo"
+    )
+
+    trigger_copy = TriggerDagRunOperator(
+        task_id="trigger_copy",
+        trigger_dag_id="{{ copy_dag_id }}",
+        wait_for_completion=False
+    )
+
+    clone >> trigger_copy

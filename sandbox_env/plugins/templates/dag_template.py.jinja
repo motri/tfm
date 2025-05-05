@@ -1,0 +1,54 @@
+{# File: dag_template.py.jinja — Auto-generated SLURM DAG ({{ dag_id }}) #}
+
+from airflow import DAG
+from datetime import datetime
+from airflow.operators.bash import BashOperator
+from airflow.providers.ssh.operators.ssh import SSHOperator
+from operators.slurm_operator import SubmitAndMonitorSlurmJobOperator
+
+default_args = {
+    'owner': '{{ owner }}',
+    'start_date': datetime({{ year }}, {{ month }}, {{ day }}),
+    'retries': 0
+}
+
+with DAG(
+    dag_id="{{ dag_id }}",
+    default_args=default_args,
+    schedule_interval="{{ schedule_interval }}",
+    catchup=False,
+    tags=[{% for tag in dag_tags.split(',') %}'{{ tag.strip() }}'{% if not loop.last %}, {% endif %}{% endfor %}]
+) as dag:
+
+    {%- if download %}
+    clone = BashOperator(
+        task_id="clone_repo",
+        bash_command="git clone {{ repo_url }} /tmp/{{ dag_id }}_repo"
+    )
+
+    copy_script = SSHOperator(
+        task_id="copy_to_hpc",
+        ssh_conn_id="{{ ssh_conn }}",
+        command="scp /tmp/{{ dag_id }}_repo/scripts/{{ script }} {{ user }}@abacus-login-{{ instance }}:{{ script }}"
+    )
+    {%- endif %}
+
+    {% set args = [] %}
+    {% if qos %}
+    {%   set args = args + ['--qos=' ~ qos] %}
+    {% endif %}
+    {% if job_name %}
+    {%   set args = args + ['--job-name=' ~ job_name] %}
+    {% endif %}
+    {%   set args = args + [script] %}
+    {% set sbatch_args = args | join(' ') %}
+
+    submit = SubmitAndMonitorSlurmJobOperator(
+        task_id="submit_slurm",
+        ssh_conn_id="{{ ssh_conn }}",
+        sbatch_args="{{ sbatch_args }}"
+    )
+
+    {%- if download %}
+    clone >> copy_script >> submit
+    {%- endif %}

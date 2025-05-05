@@ -1,0 +1,84 @@
+{% extends base_template %}
+
+{% block head %}
+  {{ super() }}
+  <link
+    rel="stylesheet"
+    href="{{ url_for('slurm_ui.static', filename='style.css') }}"
+  >
+{% endblock %}
+
+{% block content %}
+  <div class="form-container">
+    <div id="header" style="display: flex; padding-bottom: 10px; padding-top: 10px; background-color: #d7e7ee;">
+      <img src="{{url_for('slurm_ui.static', filename='Vicomtech_BRTA_RGB.png')}}" alt="Logo Vicomtech" width="180px">
+      <h1 style="align-self: center;">Generador de DAGs para workflows de SLURM</h1>
+    </div>
+    <form method="post" action="{{ url_for('slurm_ui.submit_form') }}" style="padding: 10px;">
+
+      <!-- Download from Git repo option -->
+      <label>
+        Pull script from Git repo?
+        <input type="checkbox" id="download" name="download" value="true">
+      </label>
+      <div id="repo_fields" style="margin-left: 1em;">
+        <label for="repo_url">Repo URL (this assumes scripts will be in the /scripts/ path):</label>
+        <input type="url" name="repo_url" id="repo_url" placeholder="https://gitlab.com/your/repo.git"><br><br>
+      </div>
+      <label>
+        Copy local script to HPC?
+        <input type="checkbox" id="copy_local" name="copy_local" value="true">
+      </label>
+      <div id="copy_fields">
+        <label for="path">Path to script (default /scripts/)</label>
+        <input type="text" name="script_path"><br><br>
+        <label for="user">HPC User:</label>
+        <input type="text" name="user"><br><br>
+        <label for="instance">HPC Login instance id (01 or 02):</label>
+        <input type="text" name="instance"><br><br>
+      </div>
+      <div id="arg_fields">
+        <!-- Script file to run on HPC -->
+        <label for="script">Script File:</label>
+        <input type="text" name="script" id="script" required placeholder="example.sh"><br><br>
+
+        <!-- SSH connection ID -->
+        <label for="ssh_conn">SSH Connection ID:</label>
+        <input type="text" name="ssh_conn" id="ssh_conn" value="hpc_ssh" required><br><br>
+
+        <!-- QoS and Job Name -->
+        <label for="qos">QoS (optional):</label>
+        <input type="text" name="qos" id="qos"><br><br>
+
+        <label for="job_name">Job Name (optional):</label>
+        <input type="text" name="job_name" id="job_name"><br><br>
+
+        <!-- DAG Tags -->
+        <label for="dag_tags">DAG Tags (comma-separated):</label>
+        <input type="text" name="dag_tags" id="dag_tags" value="Generated"><br><br>
+
+        <input type="submit" value="Generate DAG">
+    </div>
+    </form>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const repoFields = document.getElementById('repo_fields');
+      const downloadCheckbox = document.getElementById('download');
+      const copyLocalCheckbox = document.getElementById('copy_local');
+      const copyFields = document.getElementById('copy_fields');
+      function toggleRepoFields() {
+        repoFields.style.display = downloadCheckbox.checked ? 'block' : 'none';
+      }
+      function toggleCopyFields(){
+        copyFields.style.display = downloadCheckbox.checked || copyLocalCheckbox.checked ? 'block' : 'none';
+      }
+      downloadCheckbox.addEventListener('change', toggleRepoFields);
+      downloadCheckbox.addEventListener('change', toggleCopyFields)
+      copyLocalCheckbox.addEventListener('change', toggleCopyFields);
+      toggleRepoFields();
+      toggleCopyFields()
+    });
+  </script>
+{% endblock %}
