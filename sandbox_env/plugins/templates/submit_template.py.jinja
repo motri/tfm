@@ -1,0 +1,33 @@
+from airflow import DAG
+from datetime import datetime
+from slurm_plugin.operators.slurm_operator import SubmitAndMonitorSlurmJobOperator
+
+default_args = {
+    'owner': '{{ owner }}',
+    'start_date': datetime({{ year }}, {{ month }}, {{ day }}),
+    'retries': 0
+}
+
+with DAG(
+    dag_id="{{ submit_dag_id }}",
+    default_args=default_args,
+    schedule_interval="{{ schedule_interval }}",
+    catchup=False,
+    tags=[{% for tag in dag_tags.split(',') %}'{{ tag.strip() }}'{% if not loop.last %}, {% endif %}{% endfor %}]
+) as dag:
+
+    {% set args = [] %}
+    {% if qos %}
+      {% set args = args + ['--qos=' ~ qos] %}
+    {% endif %}
+    {% if job_name %}
+      {% set args = args + ['--job-name=' ~ job_name] %}
+    {% endif %}
+    {% set args = args + [ (download and '/workspace/' ~ script_path) or script_path ] %}
+    {% set sbatch_args = args | join(' ') %}
+
+    submit = SubmitAndMonitorSlurmJobOperator(
+        task_id="submit_slurm",
+        ssh_conn_id="{{ ssh_conn }}",
+        sbatch_args="{{ sbatch_args }}"
+    )
