@@ -1,0 +1,29 @@
+{# macros/form_fields.html #}
+
+{% macro text_input(step_idx, name, label, required=False, value='') %}
+  <div class="form-group">
+    <label for="step{{ step_idx }}_{{ name }}">
+      {{ label }}{% if required %} *{% endif %}
+    </label>
+    <input type="text"
+           class="form-control"
+           id="step{{ step_idx }}_{{ name }}"
+           name="step{{ step_idx }}_{{ name }}"
+           value="{{ value }}"
+           {% if required %}required{% endif %}>
+  </div>
+{% endmacro %}
+
+{% macro url_input(step_idx, name, label, required=False, value='') %}
+  <div class="form-group">
+    <label for="step{{ step_idx }}_{{ name }}">
+      {{ label }}{% if required %} *{% endif %}
+    </label>
+    <input type="url"
+           class="form-control"
+           id="step{{ step_idx }}_{{ name }}"
+           name="step{{ step_idx }}_{{ name }}"
+           value="{{ value }}"
+           {% if required %}required{% endif %}>
+  </div>
+{% endmacro %}

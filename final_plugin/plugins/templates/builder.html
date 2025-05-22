@@ -1,0 +1,49 @@
+{% extends base_template %}
+
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet"
+        href="{{ url_for('dag_generator.static', filename='css/builder.css') }}">
+  <script src="{{ url_for('dag_generator.static', filename='js/builder.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+  <!-- Fixed header across the top of the page -->
+  <div id="header"
+       style="position: fixed; top: 0; left: 0; width: 100%; display: flex;
+              align-items: center; padding: 10px 20px;
+              background-color: #d7e7ee; z-index: 1000;">
+    <img src="{{ url_for('slurm_ui.static', filename='Vicomtech_BRTA_RGB.png') }}"
+         alt="Logo Vicomtech" width="180px">
+    <h1 style="margin-left: 20px; font-size: 1.5rem;">
+      Generador de DAGs para workflows de SLURM
+    </h1>
+  </div>
+
+  <!-- Main content shifted below header -->
+  <div class="builder-container" style="margin-top: 80px;">
+    <h1>Workflow Builder</h1>
+    <div class="row">
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-5">
+        {% include 'dag_generator/partials/instructions.html' %}
+        {% include 'dag_generator/partials/add_step_button.html' %}
+        <button id="next-btn" class="btn btn-success mt-3" disabled>
+          Next: Configure Steps
+        </button>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="col-lg-7" id="steps-container">
+        <!-- JS will inject step editor cards here -->
+      </div>
+    </div>
+
+    <!-- Hidden form carrying the JSON workflow -->
+    <form id="workflow-form" method="post"
+          action="{{ url_for('DagGeneratorView.configure') }}"
+          style="display:none;">
+      <input type="hidden" name="workflow" id="workflow-json">
+    </form>
+  </div>
+{% endblock %}
