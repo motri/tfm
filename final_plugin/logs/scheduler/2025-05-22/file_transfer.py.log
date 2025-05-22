@@ -1,0 +1,540 @@
+[2025-05-22T07:18:44.788+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:18:44.789+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:18:44.800+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:18:44.798+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:18:44.969+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:18:45.004+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:18:45.004+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:18:45.026+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:18:45.026+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:18:45.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.281 seconds
+[2025-05-22T07:19:15.566+0000] {processor.py:186} INFO - Started process (PID=128) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:19:15.570+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:19:15.582+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:19:15.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:19:16.067+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:19:16.147+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:19:16.147+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:19:16.210+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:19:16.210+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:19:16.319+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.779 seconds
+[2025-05-22T07:19:47.103+0000] {processor.py:186} INFO - Started process (PID=197) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:19:47.104+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:19:47.107+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:19:47.106+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:19:47.190+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:19:47.208+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:19:47.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:19:47.222+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:19:47.222+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:19:47.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.145 seconds
+[2025-05-22T07:20:18.056+0000] {processor.py:186} INFO - Started process (PID=265) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:20:18.057+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:20:18.060+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:20:18.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:20:18.141+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:20:18.160+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:20:18.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:20:18.175+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:20:18.175+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:20:18.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.155 seconds
+[2025-05-22T07:20:48.827+0000] {processor.py:186} INFO - Started process (PID=333) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:20:48.829+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:20:48.831+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:20:48.831+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:20:48.914+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:20:48.933+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:20:48.933+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:20:48.948+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:20:48.947+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:20:48.969+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.152 seconds
+[2025-05-22T07:21:19.569+0000] {processor.py:186} INFO - Started process (PID=401) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:21:19.571+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:21:19.573+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:21:19.573+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:21:19.662+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:21:19.683+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:21:19.683+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:21:19.701+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:21:19.701+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:21:19.722+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.160 seconds
+[2025-05-22T07:21:49.915+0000] {processor.py:186} INFO - Started process (PID=469) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:21:49.916+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:21:49.919+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:21:49.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:21:50.002+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:21:50.021+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:21:50.020+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:21:50.037+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:21:50.036+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:21:50.055+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.147 seconds
+[2025-05-22T07:22:20.130+0000] {processor.py:186} INFO - Started process (PID=537) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:22:20.132+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:22:20.134+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:22:20.134+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:22:20.217+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:22:20.238+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:22:20.238+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:22:20.253+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:22:20.253+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:22:20.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.148 seconds
+[2025-05-22T07:22:50.635+0000] {processor.py:186} INFO - Started process (PID=605) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:22:50.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:22:50.639+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:22:50.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:22:50.730+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:22:50.749+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:22:50.749+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:22:50.764+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:22:50.764+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:22:50.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.160 seconds
+[2025-05-22T07:23:20.895+0000] {processor.py:186} INFO - Started process (PID=673) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:23:20.896+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:23:20.899+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:23:20.899+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:23:20.983+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:23:21.007+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:23:21.006+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:23:21.021+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:23:21.021+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:23:21.042+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.154 seconds
+[2025-05-22T07:23:51.210+0000] {processor.py:186} INFO - Started process (PID=741) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:23:51.211+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:23:51.214+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:23:51.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:23:51.295+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:23:51.317+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:23:51.317+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:23:51.333+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:23:51.333+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:23:51.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.150 seconds
+[2025-05-22T07:24:21.465+0000] {processor.py:186} INFO - Started process (PID=810) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:24:21.468+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:24:21.473+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:24:21.472+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:24:21.560+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:24:21.580+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:24:21.579+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:24:21.596+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:24:21.596+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:24:21.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.162 seconds
+[2025-05-22T07:24:51.773+0000] {processor.py:186} INFO - Started process (PID=879) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:24:51.774+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:24:51.777+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:24:51.776+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:24:51.857+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:24:51.876+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:24:51.875+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:24:51.891+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:24:51.890+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:24:51.913+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.147 seconds
+[2025-05-22T07:25:22.128+0000] {processor.py:186} INFO - Started process (PID=944) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:25:22.129+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:25:22.132+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:25:22.132+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:25:22.215+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:25:22.235+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:25:22.235+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:25:22.250+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:25:22.249+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:25:22.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.149 seconds
+[2025-05-22T07:25:52.359+0000] {processor.py:186} INFO - Started process (PID=1013) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:25:52.360+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:25:52.363+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:25:52.363+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:25:52.445+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:25:52.465+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:25:52.465+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:25:52.480+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:25:52.480+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:25:52.500+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.147 seconds
+[2025-05-22T07:26:22.531+0000] {processor.py:186} INFO - Started process (PID=1081) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:26:22.532+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:26:22.535+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:26:22.534+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:26:22.617+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:26:22.638+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:26:22.638+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:26:22.652+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:26:22.652+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:26:22.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.148 seconds
+[2025-05-22T07:26:52.773+0000] {processor.py:186} INFO - Started process (PID=1149) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:26:52.774+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:26:52.777+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:26:52.776+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:26:52.855+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:26:52.876+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:26:52.876+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:26:52.892+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:26:52.892+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:26:52.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.145 seconds
+[2025-05-22T07:27:23.102+0000] {processor.py:186} INFO - Started process (PID=1218) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:27:23.103+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:27:23.106+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:27:23.106+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:27:23.206+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:27:23.227+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:27:23.227+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:27:23.246+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:27:23.246+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:27:23.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.189 seconds
+[2025-05-22T07:27:53.586+0000] {processor.py:186} INFO - Started process (PID=1287) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:27:53.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:27:53.592+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:27:53.592+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:27:53.676+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:27:53.700+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:27:53.700+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:27:53.716+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:27:53.715+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:27:53.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.167 seconds
+[2025-05-22T07:28:23.834+0000] {processor.py:186} INFO - Started process (PID=1356) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:28:23.835+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:28:23.838+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:28:23.837+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:28:23.913+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:28:23.931+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:28:23.931+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:28:23.946+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:28:23.945+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:28:23.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.137 seconds
+[2025-05-22T07:28:54.251+0000] {processor.py:186} INFO - Started process (PID=1424) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:28:54.252+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:28:54.254+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:28:54.254+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:28:54.338+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:28:54.359+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:28:54.359+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:28:54.374+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:28:54.374+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:28:54.395+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.153 seconds
+[2025-05-22T07:29:24.559+0000] {processor.py:186} INFO - Started process (PID=1487) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:29:24.562+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:29:24.568+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:29:24.567+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:29:24.654+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:29:24.673+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:29:24.672+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:29:24.687+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:29:24.687+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:29:24.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.173 seconds
+[2025-05-22T07:29:55.120+0000] {processor.py:186} INFO - Started process (PID=1555) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:29:55.122+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:29:55.125+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:29:55.124+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:29:55.209+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:29:55.228+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:29:55.228+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:29:55.243+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:29:55.243+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:29:55.263+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.156 seconds
+[2025-05-22T07:30:25.735+0000] {processor.py:186} INFO - Started process (PID=1623) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:30:25.738+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:30:25.743+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:30:25.743+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:30:25.837+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:30:25.856+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:30:25.855+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:30:25.871+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:30:25.870+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:30:25.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.178 seconds
+[2025-05-22T07:35:37.255+0000] {processor.py:186} INFO - Started process (PID=68) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:35:37.257+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:35:37.260+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.260+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:35:37.766+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:35:37.882+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.881+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG:minio_to_hpc_transfer
+[2025-05-22T07:35:37.902+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.901+0000] {override.py:1912} INFO - Created Permission View: can edit on DAG:minio_to_hpc_transfer
+[2025-05-22T07:35:37.918+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.918+0000] {override.py:1912} INFO - Created Permission View: can read on DAG:minio_to_hpc_transfer
+[2025-05-22T07:35:37.946+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.946+0000] {override.py:1912} INFO - Created Permission View: can delete on DAG Run:minio_to_hpc_transfer
+[2025-05-22T07:35:37.969+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.968+0000] {override.py:1912} INFO - Created Permission View: can create on DAG Run:minio_to_hpc_transfer
+[2025-05-22T07:35:37.983+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.982+0000] {override.py:1912} INFO - Created Permission View: menu access on DAG Run:minio_to_hpc_transfer
+[2025-05-22T07:35:37.993+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.993+0000] {override.py:1912} INFO - Created Permission View: can read on DAG Run:minio_to_hpc_transfer
+[2025-05-22T07:35:37.995+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:37.994+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:35:38.012+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:38.012+0000] {dag.py:3262} INFO - Creating ORM DAG for minio_to_hpc_transfer
+[2025-05-22T07:35:38.017+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:35:38.017+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:35:38.052+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.806 seconds
+[2025-05-22T07:36:08.829+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:36:08.830+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:36:08.832+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:36:08.832+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:36:08.917+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:36:08.939+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:36:08.939+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:36:08.956+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:36:08.956+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:36:08.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.157 seconds
+[2025-05-22T07:36:39.179+0000] {processor.py:186} INFO - Started process (PID=204) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:36:39.180+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:36:39.184+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:36:39.183+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:36:39.263+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:36:39.282+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:36:39.282+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:36:39.298+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:36:39.297+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:36:39.317+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.152 seconds
+[2025-05-22T07:37:09.371+0000] {processor.py:186} INFO - Started process (PID=272) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:37:09.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:37:09.375+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:37:09.375+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:37:09.461+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:37:09.483+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:37:09.483+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:37:09.498+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:37:09.498+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:37:09.523+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.159 seconds
+[2025-05-22T07:37:39.709+0000] {processor.py:186} INFO - Started process (PID=339) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:37:39.710+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:37:39.713+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:37:39.713+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:37:39.792+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:37:39.817+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:37:39.817+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:37:39.833+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:37:39.832+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:37:39.852+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.149 seconds
+[2025-05-22T07:38:09.932+0000] {processor.py:186} INFO - Started process (PID=408) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:38:09.933+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:38:09.936+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:38:09.936+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:38:10.012+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:38:10.032+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:38:10.031+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:38:10.045+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:38:10.045+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:38:10.064+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.138 seconds
+[2025-05-22T07:38:40.671+0000] {processor.py:186} INFO - Started process (PID=475) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:38:40.673+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:38:40.679+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:38:40.678+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:38:40.771+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:38:40.800+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:38:40.799+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:38:40.817+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:38:40.817+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:38:40.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.179 seconds
+[2025-05-22T07:39:11.200+0000] {processor.py:186} INFO - Started process (PID=542) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:39:11.201+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:39:11.205+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:39:11.205+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:39:11.287+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:39:11.309+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:39:11.309+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:39:11.327+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:39:11.327+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:39:11.346+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.157 seconds
+[2025-05-22T07:39:41.948+0000] {processor.py:186} INFO - Started process (PID=616) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:39:41.949+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:39:41.952+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:39:41.952+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:39:42.038+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:39:42.057+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:39:42.057+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:39:42.073+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:39:42.073+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:39:42.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.153 seconds
+[2025-05-22T07:40:12.534+0000] {processor.py:186} INFO - Started process (PID=684) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:40:12.536+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:40:12.540+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:40:12.539+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:40:12.636+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:40:12.660+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:40:12.660+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:40:12.675+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:40:12.675+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:40:12.696+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.175 seconds
+[2025-05-22T07:40:43.573+0000] {processor.py:186} INFO - Started process (PID=752) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:40:43.575+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:40:43.582+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:40:43.582+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:40:43.673+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:40:43.694+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:40:43.694+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:40:43.709+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:40:43.708+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:40:43.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.170 seconds
+[2025-05-22T07:41:14.265+0000] {processor.py:186} INFO - Started process (PID=820) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:41:14.267+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:41:14.270+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:41:14.269+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:41:14.365+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:41:14.383+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:41:14.383+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:41:14.398+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:41:14.397+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:41:14.420+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.161 seconds
+[2025-05-22T07:41:45.127+0000] {processor.py:186} INFO - Started process (PID=888) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:41:45.129+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:41:45.133+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:41:45.132+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:41:45.215+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:41:45.236+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:41:45.236+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:41:45.251+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:41:45.251+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:41:45.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.157 seconds
+[2025-05-22T07:42:15.923+0000] {processor.py:186} INFO - Started process (PID=956) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:42:15.925+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:42:15.928+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:42:15.928+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:42:16.009+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:42:16.031+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:42:16.031+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:42:16.049+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:42:16.049+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:42:16.070+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.157 seconds
+[2025-05-22T07:42:46.168+0000] {processor.py:186} INFO - Started process (PID=1024) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:42:46.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:42:46.173+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:42:46.173+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:42:46.294+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:42:46.337+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:42:46.336+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:42:46.355+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:42:46.354+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:42:46.382+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.230 seconds
+[2025-05-22T07:43:16.800+0000] {processor.py:186} INFO - Started process (PID=1092) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:43:16.801+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:43:16.805+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:43:16.804+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:43:16.885+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:43:16.908+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:43:16.908+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:43:16.924+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:43:16.924+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:43:16.944+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.150 seconds
+[2025-05-22T07:43:47.670+0000] {processor.py:186} INFO - Started process (PID=1160) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:43:47.672+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:43:47.676+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:43:47.676+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:43:47.761+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:43:47.785+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:43:47.785+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:43:47.802+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:43:47.801+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:43:47.824+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.168 seconds
+[2025-05-22T07:44:17.919+0000] {processor.py:186} INFO - Started process (PID=1229) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:44:17.920+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:44:17.923+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:44:17.922+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:44:17.998+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:44:18.019+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:44:18.018+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:44:18.034+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:44:18.034+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:44:18.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.141 seconds
+[2025-05-22T07:44:48.876+0000] {processor.py:186} INFO - Started process (PID=1296) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:44:48.877+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:44:48.881+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:44:48.880+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:44:48.968+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:44:48.988+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:44:48.988+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:44:49.003+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:44:49.002+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:44:49.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.161 seconds
+[2025-05-22T07:45:19.060+0000] {processor.py:186} INFO - Started process (PID=1364) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:45:19.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:45:19.064+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:45:19.064+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:45:19.149+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:45:19.170+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:45:19.170+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:45:19.185+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:45:19.185+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:45:19.204+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.151 seconds
+[2025-05-22T07:45:49.979+0000] {processor.py:186} INFO - Started process (PID=1431) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:45:49.981+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:45:49.985+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:45:49.985+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:45:50.071+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:45:50.094+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:45:50.094+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:45:50.109+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:45:50.108+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:45:50.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.164 seconds
+[2025-05-22T07:46:21.094+0000] {processor.py:186} INFO - Started process (PID=1499) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:46:21.095+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:46:21.098+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:46:21.098+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:46:21.181+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:46:21.203+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:46:21.203+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:46:21.219+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:46:21.218+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:46:21.239+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.158 seconds
+[2025-05-22T07:46:51.873+0000] {processor.py:186} INFO - Started process (PID=1567) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:46:51.874+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:46:51.878+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:46:51.877+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:46:51.965+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:46:51.989+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:46:51.989+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:46:52.005+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:46:52.005+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:46:52.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.165 seconds
+[2025-05-22T07:47:22.598+0000] {processor.py:186} INFO - Started process (PID=1635) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:47:22.600+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:47:22.603+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:47:22.603+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:47:22.689+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:47:22.714+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:47:22.713+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:47:22.730+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:47:22.729+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:47:22.752+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.169 seconds
+[2025-05-22T07:47:52.857+0000] {processor.py:186} INFO - Started process (PID=1704) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:47:52.858+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:47:52.862+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:47:52.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:47:52.941+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:47:52.964+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:47:52.963+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:47:52.979+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:47:52.978+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:47:52.998+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.147 seconds
+[2025-05-22T07:48:23.539+0000] {processor.py:186} INFO - Started process (PID=1770) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:48:23.543+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:48:23.547+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:48:23.547+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:48:23.650+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:48:23.676+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:48:23.675+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:48:23.693+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:48:23.693+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:48:23.714+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.182 seconds
+[2025-05-22T07:48:54.429+0000] {processor.py:186} INFO - Started process (PID=1838) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:48:54.430+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:48:54.433+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:48:54.432+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:48:54.515+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:48:54.537+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:48:54.536+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:48:54.551+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:48:54.551+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:48:54.575+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.153 seconds
+[2025-05-22T07:49:25.315+0000] {processor.py:186} INFO - Started process (PID=1906) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:49:25.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:49:25.320+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:49:25.319+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:49:25.403+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:49:25.423+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:49:25.422+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:49:25.620+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:49:25.620+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:49:25.638+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.330 seconds
+[2025-05-22T07:49:55.752+0000] {processor.py:186} INFO - Started process (PID=1976) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:49:55.753+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:49:55.755+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:49:55.755+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:49:55.834+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:49:55.853+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:49:55.853+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:49:55.869+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:49:55.869+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:49:56.068+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.323 seconds
+[2025-05-22T07:50:26.878+0000] {processor.py:186} INFO - Started process (PID=2044) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:50:26.880+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:50:26.883+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:50:26.883+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:50:26.970+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:50:26.990+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:50:26.990+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:50:27.006+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:50:27.006+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:50:27.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.155 seconds
+[2025-05-22T07:50:57.113+0000] {processor.py:186} INFO - Started process (PID=2112) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:50:57.114+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:50:57.117+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:50:57.116+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:50:57.204+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:50:57.225+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:50:57.225+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:50:57.241+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:50:57.241+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:50:57.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.156 seconds
+[2025-05-22T07:51:28.057+0000] {processor.py:186} INFO - Started process (PID=2180) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:51:28.058+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:51:28.061+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:51:28.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:51:28.333+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:51:28.352+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:51:28.352+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:51:28.365+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:51:28.365+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:51:28.386+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.337 seconds
+[2025-05-22T07:51:58.432+0000] {processor.py:186} INFO - Started process (PID=2250) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:51:58.433+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:51:58.435+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:51:58.435+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:51:58.516+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:51:58.715+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:51:58.715+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:51:58.728+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:51:58.728+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:51:58.745+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.320 seconds
+[2025-05-22T07:52:28.890+0000] {processor.py:186} INFO - Started process (PID=2320) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:52:28.891+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:52:28.894+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:52:28.893+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:52:28.976+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:52:28.995+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:52:28.995+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:52:29.184+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:52:29.184+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:52:29.202+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.318 seconds
+[2025-05-22T07:52:59.388+0000] {processor.py:186} INFO - Started process (PID=2384) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:52:59.389+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:52:59.392+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:52:59.391+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:52:59.475+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:52:59.495+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:52:59.494+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:52:59.509+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:52:59.509+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:52:59.529+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.151 seconds
+[2025-05-22T07:53:30.384+0000] {processor.py:186} INFO - Started process (PID=2452) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:53:30.386+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:53:30.389+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:53:30.389+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:53:30.653+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:53:30.673+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:53:30.673+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:53:30.686+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:53:30.685+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:53:30.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.334 seconds
+[2025-05-22T07:54:00.771+0000] {processor.py:186} INFO - Started process (PID=2522) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:54:00.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:54:00.774+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:54:00.774+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:54:01.033+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:54:01.052+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:54:01.052+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:54:01.065+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:54:01.065+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:54:01.086+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.322 seconds
+[2025-05-22T07:54:31.144+0000] {processor.py:186} INFO - Started process (PID=2591) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:54:31.146+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:54:31.149+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:54:31.149+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:54:31.462+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:54:31.484+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:54:31.484+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:54:31.498+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:54:31.498+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:54:31.520+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.383 seconds
+[2025-05-22T07:55:01.708+0000] {processor.py:186} INFO - Started process (PID=2658) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:55:01.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:55:01.712+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:55:01.711+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:55:01.797+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:55:02.036+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:55:02.036+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:55:02.053+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:55:02.053+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:55:02.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.390 seconds
+[2025-05-22T07:55:32.808+0000] {processor.py:186} INFO - Started process (PID=2726) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:55:32.812+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:55:32.815+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:55:32.815+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:55:33.085+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:55:33.105+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:55:33.105+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:55:33.119+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:55:33.118+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:55:33.138+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.340 seconds
+[2025-05-22T07:56:03.426+0000] {processor.py:186} INFO - Started process (PID=2794) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:56:03.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:56:03.430+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:56:03.430+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:56:03.756+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:56:03.779+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:56:03.779+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:56:03.797+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:56:03.796+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:56:03.820+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.401 seconds
+[2025-05-22T07:56:34.072+0000] {processor.py:186} INFO - Started process (PID=2862) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:56:34.074+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:56:34.079+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:56:34.078+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:56:34.357+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:56:34.393+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:56:34.392+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:56:34.408+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:56:34.407+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:56:34.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.372 seconds
+[2025-05-22T07:57:04.791+0000] {processor.py:186} INFO - Started process (PID=2930) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:57:04.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:57:04.795+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:57:04.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:57:05.098+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:57:05.123+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:57:05.123+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:57:05.137+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:57:05.137+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:57:05.158+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.373 seconds
+[2025-05-22T07:57:35.196+0000] {processor.py:186} INFO - Started process (PID=2998) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:57:35.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:57:35.200+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:57:35.200+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:57:35.517+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:57:35.545+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:57:35.544+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:57:35.573+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:57:35.573+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:57:35.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.409 seconds
+[2025-05-22T07:58:05.767+0000] {processor.py:186} INFO - Started process (PID=3066) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:58:05.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:58:05.773+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:58:05.773+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:58:06.051+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:58:06.069+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:58:06.069+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:58:06.083+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:58:06.083+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:58:06.106+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.356 seconds
+[2025-05-22T07:58:36.744+0000] {processor.py:186} INFO - Started process (PID=3136) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:58:36.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:58:36.748+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:58:36.747+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:58:36.828+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:58:36.848+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:58:36.847+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:58:36.862+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:58:36.862+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:58:36.881+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.144 seconds
+[2025-05-22T07:59:07.293+0000] {processor.py:186} INFO - Started process (PID=3204) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:59:07.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:59:07.297+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:59:07.297+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:59:07.381+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:59:07.401+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:59:07.400+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:59:07.419+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:59:07.419+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:59:07.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.151 seconds
+[2025-05-22T07:59:37.499+0000] {processor.py:186} INFO - Started process (PID=3267) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:59:37.501+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T07:59:37.504+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:59:37.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:59:37.585+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T07:59:37.606+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:59:37.605+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T07:59:37.621+0000] {logging_mixin.py:190} INFO - [2025-05-22T07:59:37.621+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T07:59:37.640+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.148 seconds
+[2025-05-22T08:00:08.179+0000] {processor.py:186} INFO - Started process (PID=3335) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:00:08.180+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T08:00:08.183+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:00:08.183+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:00:08.266+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:00:08.286+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:00:08.285+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T08:00:08.301+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:00:08.300+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T08:00:08.324+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.152 seconds
+[2025-05-22T08:00:38.768+0000] {processor.py:186} INFO - Started process (PID=3402) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:00:38.769+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T08:00:38.772+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:00:38.771+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:00:38.853+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:00:38.875+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:00:38.875+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T08:00:38.890+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:00:38.890+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T08:00:38.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.148 seconds
+[2025-05-22T08:01:08.972+0000] {processor.py:186} INFO - Started process (PID=3469) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:01:08.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T08:01:08.977+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:01:08.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:01:09.075+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:01:09.097+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:01:09.097+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T08:01:09.115+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:01:09.115+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T08:01:09.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.172 seconds
+[2025-05-22T08:01:39.356+0000] {processor.py:186} INFO - Started process (PID=3532) to work on /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:01:39.358+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/file_transfer.py for tasks to queue
+[2025-05-22T08:01:39.362+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:01:39.362+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:01:39.456+0000] {processor.py:925} INFO - DAG(s) 'minio_to_hpc_transfer' retrieved from /opt/airflow/dags/file_transfer.py
+[2025-05-22T08:01:39.475+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:01:39.474+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-05-22T08:01:39.491+0000] {logging_mixin.py:190} INFO - [2025-05-22T08:01:39.491+0000] {dag.py:4180} INFO - Setting next_dagrun for minio_to_hpc_transfer to None, run_after=None
+[2025-05-22T08:01:39.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/file_transfer.py took 0.172 seconds
