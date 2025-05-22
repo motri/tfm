@@ -3,11 +3,8 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from airflow.www.app import csrf
 from flask_appbuilder import BaseView, expose
 from airflow.models import Variable
-from dag_generator import generate_dag_file
 from datetime import datetime
-import os
-import json
-import session
+
 
 class DagGeneratorView(BaseView):
     default_view = "builder"
