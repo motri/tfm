@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         card.dataset.idx = idx;
   
         if (!step.type) {
-          // Step type not chosen yet: show dropdown + Finish
           card.innerHTML = `
             <div class="card-body">
               <label for="step-type-${idx}">Step ${idx+1}: select type</label>
