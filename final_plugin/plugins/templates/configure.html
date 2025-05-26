@@ -1,4 +1,5 @@
 {% extends base_template %}
+{{ appbuilder.app_name }}
 
 {% block page_title %}Configure Workflow{% endblock %}
 
@@ -45,7 +46,7 @@
         <div class="card-header">Paso {{ loop.index }}: {{ step.type|capitalize }}</div>
         <div class="card-body">
           {% if step.type == 'transfer' %}
-            {{ select_input( idx, 'minio_conn_id', 'MinIO Conn ID', options=conn_list('minio'), required=True) }}
+            {{ select_input( idx, 'minio_conn_id', 'MinIO Conn ID', options=conn_list('aws'), required=True) }}
             {{ url_input(    idx, 'source_bucket',    'S3 URI de origen', True) }}
             {{ text_input(   idx, 'dest_path_gpfs',   'Destino GPFS',     True) }}
             {{ number_input(idx, 'batch_size',        'Tamaño de lote',   False) }}

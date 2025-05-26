@@ -1,4 +1,4 @@
-import json, os
+import json, os, datetime
 from flask import (
     Blueprint, render_template, request, session,
     flash, redirect, url_for, current_app
@@ -6,8 +6,27 @@ from flask import (
 from flask_appbuilder import BaseView, expose
 from airflow.plugins_manager import AirflowPlugin
 from airflow.www.app import csrf
+from airflow.www.app import app as flask_app
+from airflow.models import Connection
+from airflow.settings import Session
+from airflow.configuration import conf
 
-# ─────────────────────────────────────────────────────────────────────────────
+
+def conn_list(conn_type: str):
+    sess = Session()
+    try:
+        ct = conn_type.lower()
+        if ct in ("minio", "s3"):
+            rows = sess.query(Connection).filter(Connection.conn_type.ilike("s3")).all()
+        elif ct == "ssh":
+            rows = sess.query(Connection).filter(Connection.conn_type == "ssh").all()
+        else:
+            rows = sess.query(Connection).all()
+        return [c.conn_id for c in rows]
+    finally:
+        sess.close()
+
+# ────────────────────────────────────────────────────────────────────────────
 # 1) THE BLUEPRINT: serves builder & configure pages, static files, templates,
 #    and injects base_template + appbuilder into every render.
 # ─────────────────────────────────────────────────────────────────────────────
@@ -36,25 +55,28 @@ def configure_workflow():
     if request.method == "POST" and "workflow" in request.form:
         session["workflow_steps"] = request.form["workflow"]
         return redirect(url_for("dag_generator.configure_workflow"))
+
     steps_json = session.get("workflow_steps")
     if not steps_json:
         flash("Please define workflow steps first.", "warning")
         return redirect(url_for("dag_generator.show_builder"))
-    steps = json.loads(steps_json)
-    return render_template("configure.html", steps=steps)
 
+    steps = json.loads(steps_json)
+    # Pass conn_list into the template context
+    return render_template(
+        "configure.html",
+        steps=steps,
+        conn_list=conn_list
+    )
 @dag_generator_bp.route("/generate", methods=["POST"])
 @csrf.exempt
 def generate_dags():
-    # 1) Pull the steps out of the session
     raw = session.pop("workflow_steps", "[]")
     step_defs = json.loads(raw)
 
-    # 2) Prepare the Jinja template and target folder
     template = current_app.jinja_env.get_template("dag_template.py.jinja")
     dags_folder = conf.get("core", "dags_folder")
 
-    # 3) Build a clean context dict
     now = datetime.utcnow()
     dag_id = f"slurm_workflow_{now.strftime('%Y%m%dT%H%M%S')}"
     ctx = {
