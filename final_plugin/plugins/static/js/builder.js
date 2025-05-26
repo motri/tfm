@@ -1,4 +1,3 @@
-console.log("🔥 builder.js loaded");
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,14 +22,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!step.type) {
           card.innerHTML = `
             <div class="card-body">
-              <label for="step-type-${idx}">Step ${idx+1}: select type</label>
+              <label for="step-type-${idx}">Paso ${idx+1}: elija el tipo type</label>
               <select id="step-type-${idx}" class="form-control step-type-select">
-                <option value="">-- choose one --</option>
-                <option value="transfer">Transfer Data to HPC</option>
-                <option value="git">Git Clone/Fetch</option>
-                <option value="slurm">Submit SLURM Job</option>
+              <option value="">-- elija uno --</option>
+              <option value="transfer">Transferir datos al HPC</option>
+              <option value="git">Clonar/Obtener de Git</option>
+              <option value="slurm">Enviar trabajo SLURM</option>
               </select>
-              <button class="btn btn-sm btn-info finish-step mt-2">Finish</button>
+              <button class="btn btn-sm btn-info finish-step mt-2">Agregar</button>
             </div>`;
         } else {
           // Step type already chosen: just show a summary
