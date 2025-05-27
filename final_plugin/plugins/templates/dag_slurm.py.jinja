@@ -1,0 +1,38 @@
+from airflow import DAG
+from operators.slurm_operator import SubmitAndMonitorSlurmJobOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from datetime import datetime
+
+default_args = {
+    'owner': '{{ owner }}',
+    'start_date': datetime({{ start_date_year }}, {{ start_date_month }}, {{ start_date_day }}),
+}
+
+with DAG(
+    dag_id='{{ dag_id }}',
+    default_args=default_args,
+    schedule_interval=None,
+    catchup=False,
+    tags={{ workflow_tags|tojson }},
+) as dag:
+    slurm = SubmitAndMonitorSlurmJobOperator(
+        task_id='submit_slurm',
+        ssh_conn_id='{{ ssh_conn_id }}',
+        script_path='{{ script_path }}',
+        {% if partition %}partition='{{ partition }}',{% endif %}
+        {% if qos %}qos='{{ qos }}',{% endif %}
+        {% if job_name %}job_name='{{ job_name }}',{% endif %}
+        {% if time_limit %}time_limit='{{ time_limit }}',{% endif %}
+        {% if cpus_per_task %}cpus_per_task={{ cpus_per_task }},{% endif %}
+        {% if mem %}mem='{{ mem }}',{% endif %}
+        {% if extra_sbatch_args %}extra_sbatch_args='{{ extra_sbatch_args }}',{% endif %}
+        poll_interval=30,
+    )
+
+    {% if next_dag_id %}
+    trigger = TriggerDagRunOperator(
+        task_id='trigger_{{ next_dag_id }}',
+        trigger_dag_id='{{ next_dag_id }}'
+    )
+    slurm >> trigger
+    {% endif %}

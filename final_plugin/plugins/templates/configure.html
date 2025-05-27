@@ -47,7 +47,7 @@
         <div class="card-body">
           {% if step.type == 'transfer' %}
             {{ select_input( idx, 'minio_conn_id', 'MinIO Conn ID', options=conn_list('aws'), required=True) }}
-            {{ url_input(    idx, 'source_bucket',    'S3 URI de origen', True) }}
+            {{ text_input(    idx, 'source_bucket',    'Bucket de origin', True) }}
             {{ text_input(   idx, 'dest_path_gpfs',   'Destino GPFS',     True) }}
             {{ number_input(idx, 'batch_size',        'Tamaño de lote',   False) }}
             {{ number_input(idx, 'parallel_transfers','Transferencias simultáneas', False) }}

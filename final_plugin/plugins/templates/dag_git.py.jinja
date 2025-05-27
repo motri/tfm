@@ -1,0 +1,33 @@
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from datetime import datetime
+
+default_args = {
+    'owner': '{{ owner }}',
+    'start_date': datetime({{ start_date_year }}, {{ start_date_month }}, {{ start_date_day }}),
+}
+
+with DAG(
+    dag_id='{{ dag_id }}',
+    default_args=default_args,
+    schedule_interval=None,
+    catchup=False,
+    tags={{ workflow_tags|tojson }},
+) as dag:
+    git_clone = BashOperator(
+        task_id='git_clone',
+        bash_command=(
+            'git clone '
+            '{% if branch_or_tag %}-b {{ branch_or_tag }} {% endif %}'
+            '{{ repo_url }} {{ target_path }}'
+        )
+    )
+
+    {% if next_dag_id %}
+    trigger = TriggerDagRunOperator(
+        task_id='trigger_{{ next_dag_id }}',
+        trigger_dag_id='{{ next_dag_id }}'
+    )
+    git_clone >> trigger
+    {% endif %}
