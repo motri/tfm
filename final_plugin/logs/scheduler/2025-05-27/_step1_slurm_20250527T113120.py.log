@@ -321,3 +321,632 @@ Traceback (most recent call last):
 airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
 [2025-05-27T11:41:04.488+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
 [2025-05-27T11:41:04.509+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.042 seconds
+[2025-05-27T11:41:34.726+0000] {processor.py:186} INFO - Started process (PID=14689) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:41:34.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:41:34.732+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:41:34.732+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:41:34.743+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:41:34.741+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:41:34.744+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:41:34.768+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.053 seconds
+[2025-05-27T11:42:04.951+0000] {processor.py:186} INFO - Started process (PID=14758) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:42:04.952+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:42:04.955+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:42:04.955+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:42:04.962+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:42:04.960+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:42:04.963+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:42:04.984+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.040 seconds
+[2025-05-27T11:42:35.179+0000] {processor.py:186} INFO - Started process (PID=14827) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:42:35.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:42:35.183+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:42:35.183+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:42:35.191+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:42:35.188+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:42:35.192+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:42:35.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.042 seconds
+[2025-05-27T11:43:05.376+0000] {processor.py:186} INFO - Started process (PID=14896) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:43:05.377+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:43:05.380+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:43:05.380+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:43:05.387+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:43:05.385+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:43:05.388+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:43:05.411+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.042 seconds
+[2025-05-27T11:43:35.915+0000] {processor.py:186} INFO - Started process (PID=14965) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:43:35.918+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:43:35.925+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:43:35.924+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:43:35.936+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:43:35.933+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:43:35.938+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:43:35.966+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.080 seconds
+[2025-05-27T11:44:06.388+0000] {processor.py:186} INFO - Started process (PID=15040) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:44:06.391+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:44:06.397+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:44:06.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:44:06.408+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:44:06.404+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:44:06.409+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:44:06.438+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.076 seconds
+[2025-05-27T11:44:37.131+0000] {processor.py:186} INFO - Started process (PID=15109) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:44:37.132+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:44:37.135+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:44:37.134+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:44:37.142+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:44:37.140+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:44:37.143+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:44:37.165+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.042 seconds
+[2025-05-27T11:45:07.314+0000] {processor.py:186} INFO - Started process (PID=15178) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:45:07.315+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:45:07.319+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:45:07.318+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:45:07.327+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:45:07.324+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:45:07.328+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:45:07.355+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.055 seconds
+[2025-05-27T11:45:38.091+0000] {processor.py:186} INFO - Started process (PID=15247) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:45:38.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:45:38.104+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:45:38.103+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:45:38.132+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:45:38.124+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:45:38.135+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:45:38.180+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.115 seconds
+[2025-05-27T11:46:09.070+0000] {processor.py:186} INFO - Started process (PID=15316) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:46:09.072+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:46:09.076+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:46:09.075+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:46:09.085+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:46:09.083+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:46:09.086+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:46:09.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.064 seconds
+[2025-05-27T11:46:40.133+0000] {processor.py:186} INFO - Started process (PID=15385) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:46:40.134+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:46:40.137+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:46:40.137+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:46:40.144+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:46:40.142+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:46:40.145+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:46:40.164+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.038 seconds
+[2025-05-27T11:47:10.299+0000] {processor.py:186} INFO - Started process (PID=15455) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:47:10.300+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:47:10.304+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:47:10.303+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:47:10.311+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:47:10.309+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:47:10.312+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:47:10.332+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.041 seconds
+[2025-05-27T11:47:40.565+0000] {processor.py:186} INFO - Started process (PID=15525) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:47:40.567+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:47:40.571+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:47:40.570+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:47:40.581+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:47:40.579+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:47:40.582+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:47:40.602+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.045 seconds
+[2025-05-27T11:48:11.410+0000] {processor.py:186} INFO - Started process (PID=15595) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:48:11.412+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:48:11.415+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:48:11.414+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:48:11.422+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:48:11.420+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:48:11.423+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:48:11.444+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.045 seconds
+[2025-05-27T11:48:42.355+0000] {processor.py:186} INFO - Started process (PID=15665) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:48:42.356+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:48:42.360+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:48:42.359+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:48:42.367+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:48:42.365+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:48:42.368+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:48:42.388+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.040 seconds
+[2025-05-27T11:49:12.592+0000] {processor.py:186} INFO - Started process (PID=15735) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:49:12.593+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:49:12.596+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:49:12.595+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:49:12.604+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:49:12.601+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:49:12.605+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:49:12.627+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.043 seconds
+[2025-05-27T11:49:43.012+0000] {processor.py:186} INFO - Started process (PID=15805) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:49:43.013+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:49:43.016+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:49:43.015+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:49:43.022+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:49:43.020+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:49:43.024+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:49:43.045+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.041 seconds
+[2025-05-27T11:50:13.118+0000] {processor.py:186} INFO - Started process (PID=15875) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:50:13.120+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:50:13.125+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:50:13.124+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:50:13.139+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:50:13.135+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:50:13.141+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:50:13.167+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.064 seconds
+[2025-05-27T11:50:43.247+0000] {processor.py:186} INFO - Started process (PID=15945) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:50:43.248+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:50:43.252+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:50:43.252+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:50:43.261+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:50:43.258+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:50:43.262+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:50:43.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.043 seconds
+[2025-05-27T11:51:13.415+0000] {processor.py:186} INFO - Started process (PID=16015) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:51:13.416+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:51:13.420+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:51:13.420+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:51:13.427+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:51:13.426+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:51:13.428+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:51:13.450+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.042 seconds
+[2025-05-27T11:51:43.574+0000] {processor.py:186} INFO - Started process (PID=16085) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:51:43.576+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:51:43.581+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:51:43.580+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:51:43.590+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:51:43.587+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:51:43.591+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:51:43.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.053 seconds
+[2025-05-27T11:52:14.141+0000] {processor.py:186} INFO - Started process (PID=16155) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:52:14.142+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:52:14.146+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:52:14.146+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:52:14.153+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:52:14.151+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:52:14.153+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:52:14.174+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.039 seconds
+[2025-05-27T11:52:44.458+0000] {processor.py:186} INFO - Started process (PID=16225) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:52:44.460+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:52:44.463+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:52:44.463+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:52:44.475+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:52:44.471+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:52:44.476+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:52:44.505+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.058 seconds
+[2025-05-27T11:53:14.893+0000] {processor.py:186} INFO - Started process (PID=16294) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:53:14.895+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:53:14.900+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:53:14.899+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:53:14.910+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:53:14.908+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:53:14.911+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:53:14.933+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.058 seconds
+[2025-05-27T11:53:45.416+0000] {processor.py:186} INFO - Started process (PID=16363) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:53:45.418+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:53:45.422+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:53:45.422+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:53:45.432+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:53:45.429+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:53:45.433+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:53:45.461+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.065 seconds
+[2025-05-27T11:54:16.637+0000] {processor.py:186} INFO - Started process (PID=16431) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:54:16.638+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:54:16.643+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:54:16.642+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:54:16.652+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:54:16.650+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:54:16.653+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:54:16.683+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.053 seconds
+[2025-05-27T11:54:46.753+0000] {processor.py:186} INFO - Started process (PID=16499) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:54:46.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:54:46.757+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:54:46.756+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:54:46.763+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:54:46.761+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:54:46.764+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:54:46.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.039 seconds
+[2025-05-27T11:55:17.298+0000] {processor.py:186} INFO - Started process (PID=16561) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:55:17.299+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:55:17.302+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:55:17.301+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:55:17.310+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:55:17.308+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:55:17.311+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:55:17.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.044 seconds
+[2025-05-27T11:55:47.419+0000] {processor.py:186} INFO - Started process (PID=16620) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:55:47.420+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:55:47.423+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:55:47.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:55:47.430+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:55:47.428+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:55:47.434+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:55:47.458+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.046 seconds
+[2025-05-27T11:56:17.669+0000] {processor.py:186} INFO - Started process (PID=16679) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:56:17.671+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:56:17.674+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:56:17.673+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:56:17.681+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:56:17.678+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:56:17.682+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:56:17.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.047 seconds
+[2025-05-27T11:56:48.505+0000] {processor.py:186} INFO - Started process (PID=16749) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:56:48.506+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:56:48.509+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:56:48.509+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:56:48.519+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:56:48.514+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:56:48.520+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:56:48.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.047 seconds
+[2025-05-27T11:57:18.589+0000] {processor.py:186} INFO - Started process (PID=16819) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:57:18.590+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:57:18.594+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:57:18.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:57:18.600+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:57:18.598+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:57:18.601+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:57:18.622+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.041 seconds
+[2025-05-27T11:57:48.723+0000] {processor.py:186} INFO - Started process (PID=16889) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:57:48.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:57:48.727+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:57:48.727+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:57:48.734+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:57:48.732+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:57:48.735+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:57:48.754+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.038 seconds
+[2025-05-27T11:58:19.021+0000] {processor.py:186} INFO - Started process (PID=16959) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:58:19.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:58:19.025+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:58:19.025+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:58:19.032+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:58:19.030+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:58:19.033+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:58:19.053+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.039 seconds
+[2025-05-27T11:58:49.227+0000] {processor.py:186} INFO - Started process (PID=17029) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:58:49.229+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:58:49.231+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:58:49.231+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:58:49.238+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:58:49.236+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:58:49.239+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:58:49.260+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.041 seconds
+[2025-05-27T11:59:19.523+0000] {processor.py:186} INFO - Started process (PID=17099) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:59:19.524+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:59:19.528+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:59:19.527+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:59:19.537+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:59:19.535+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:59:19.538+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:59:19.568+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.053 seconds
+[2025-05-27T11:59:50.141+0000] {processor.py:186} INFO - Started process (PID=17169) to work on /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:59:50.142+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_slurm_20250527T113120.py for tasks to queue
+[2025-05-27T11:59:50.145+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:59:50.145+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:59:50.154+0000] {logging_mixin.py:190} INFO - [2025-05-27T11:59:50.151+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/_step1_slurm_20250527T113120.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/_step1_slurm_20250527T113120.py", line 18, in <module>
+    slurm = SubmitAndMonitorSlurmJobOperator(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 491, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'sbatch_args'
+[2025-05-27T11:59:50.156+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/_step1_slurm_20250527T113120.py
+[2025-05-27T11:59:50.179+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_slurm_20250527T113120.py took 0.047 seconds
