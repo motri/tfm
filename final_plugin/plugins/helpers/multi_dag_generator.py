@@ -21,15 +21,38 @@ def build_dag_files(step_defs, global_cfg, jinja_env):
             next_dag = None
 
         year, month, day = now.year, now.month, now.day
-        ctx = {
-            **global_cfg,
-            **params,
-            'dag_id': dag_id,
-            'next_dag_id': next_dag,
-            'start_date_year': year,
-            'start_date_month': month,
-            'start_date_day': day,
-        }
+
+        if step_type == 'slurm':
+            ctx = {
+                **global_cfg,
+                'dag_id': dag_id,
+                'next_dag_id': next_dag,
+                'start_date_year': year,
+                'start_date_month': month,
+                'start_date_day': day,
+            }
+            parts = []
+            parts.append(params["script"]) 
+            if params.get("qos"):
+                parts.append(f"--qos={params['qos']}")
+            if params.get("job_name"):
+                parts.append(f"--job-name={params['job_name']}")
+            if params.get("extra_args"):
+                parts.append(params['extra_args'])
+            ctx["sbatch_args"]   = " ".join(parts)
+            ctx["ssh_conn_id"]   = params["ssh_conn_id"]
+            ctx["poll_interval"] = params.get("poll_interval", 60)
+        else:
+            ctx = {
+                **global_cfg,
+                **params,
+                'dag_id': dag_id,
+                'next_dag_id': next_dag,
+                'start_date_year': year,
+                'start_date_month': month,
+                'start_date_day': day,
+            }
+        
 
         template = jinja_env.get_template(f"dag_{step_type}.py.jinja")
         rendered = template.render(**ctx)

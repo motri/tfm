@@ -97,7 +97,7 @@ class DagGeneratorPlugin(AirflowPlugin):
     name = "dag_generator_plugin"
     flask_blueprints = [dag_generator_bp]
     appbuilder_views = [{
-        "name": "Workflow Builder",
+        "name": "Generador de DAGs",
         "category": "Admin",
         "view": WorkflowBuilderView()
     }]

@@ -61,13 +61,9 @@
           {% elif step.type == 'slurm' %}
             {{ select_input( idx, 'ssh_conn_id', 'Conexión SSH HPC', options=conn_list('ssh'), required=True) }}
             {{ text_input(   idx, 'script',     'Ruta del script .sh',     True) }}
-            {{ text_input(   idx, 'partition',  'Partición SLURM',         False) }}
             {{ text_input(   idx, 'qos',        'QoS',                      False) }}
             {{ text_input(   idx, 'job_name',   'Nombre del trabajo',       False) }}
-            {{ text_input(   idx, 'time_limit', 'Límite de tiempo',         False) }}
-            {{ text_input(   idx, 'cpus_per_task','CPUs por tarea',         False) }}
-            {{ text_input(   idx, 'mem',        'Memoria',                  False) }}
-            {{ text_input(   idx, 'extra_sbatch_args','Args extra',       False) }}
+            {{ text_input(   idx, 'extra_sbatch_args','Args extra (mantén el formato the sbatch: --cpu=1 --partition=example...)',       False) }}
           {% endif %}
         </div>
       </div>

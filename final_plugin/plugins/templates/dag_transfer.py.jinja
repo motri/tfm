@@ -13,7 +13,7 @@ with DAG(
     default_args=default_args,
     schedule_interval=None,
     catchup=False,
-    tags={{ workflow_tags|tojson }},
+    tags=[{{ workflow_tags|tojson }}]
 ) as dag:
     transfer = BashOperator(
         task_id='transfer_to_gpfs',
