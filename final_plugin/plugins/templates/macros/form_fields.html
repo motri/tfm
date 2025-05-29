@@ -1,0 +1,88 @@
+{# plugins/templates/macros/form_fields.html #}
+
+{% macro text_input(step_idx, name, label, required=False, value='') -%}
+  {%- if step_idx is not none -%}
+    {%- set field_id = 'step' ~ step_idx ~ '_' ~ name -%}
+  {%- else -%}
+    {%- set field_id = name -%}
+  {%- endif -%}
+  <div class="form-group">
+    <label for="{{ field_id }}">{{ label }}{% if required %} *{% endif %}</label>
+    <input type="text"
+           class="form-control"
+           id="{{ field_id }}"
+           name="{{ field_id }}"
+           value="{{ value }}"
+           {% if required %}required{% endif %}>
+  </div>
+{%- endmacro %}
+
+{% macro url_input(step_idx, name, label, required=False, value='') -%}
+  {%- if step_idx is not none -%}
+    {%- set field_id = 'step' ~ step_idx ~ '_' ~ name -%}
+  {%- else -%}
+    {%- set field_id = name -%}
+  {%- endif -%}
+  <div class="form-group">
+    <label for="{{ field_id }}">{{ label }}{% if required %} *{% endif %}</label>
+    <input type="url"
+           class="form-control"
+           id="{{ field_id }}"
+           name="{{ field_id }}"
+           value="{{ value }}"
+           {% if required %}required{% endif %}>
+  </div>
+{%- endmacro %}
+
+{% macro number_input(step_idx, name, label, required=False, value='') -%}
+  {%- if step_idx is not none -%}
+    {%- set field_id = 'step' ~ step_idx ~ '_' ~ name -%}
+  {%- else -%}
+    {%- set field_id = name -%}
+  {%- endif -%}
+  <div class="form-group">
+    <label for="{{ field_id }}">{{ label }}{% if required %} *{% endif %}</label>
+    <input type="number"
+           class="form-control"
+           id="{{ field_id }}"
+           name="{{ field_id }}"
+           value="{{ value }}"
+           {% if required %}required{% endif %}>
+  </div>
+{%- endmacro %}
+
+{% macro select_input(step_idx, name, label, options, required=False) -%}
+  {%- if step_idx is not none -%}
+    {%- set field_id = 'step' ~ step_idx ~ '_' ~ name -%}
+  {%- else -%}
+    {%- set field_id = name -%}
+  {%- endif -%}
+  <div class="form-group">
+    <label for="{{ field_id }}">{{ label }}{% if required %} *{% endif %}</label>
+    <select class="form-control"
+            id="{{ field_id }}"
+            name="{{ field_id }}"
+            {% if required %}required{% endif %}>
+      <option value="">-- select --</option>
+      {% for opt in options %}
+        <option value="{{ opt }}">{{ opt }}</option>
+      {% endfor %}
+    </select>
+  </div>
+{%- endmacro %}
+
+{% macro checkbox_input(step_idx, name, label, checked=False) -%}
+  {%- if step_idx is not none -%}
+    {%- set field_id = 'step' ~ step_idx ~ '_' ~ name -%}
+  {%- else -%}
+    {%- set field_id = name -%}
+  {%- endif -%}
+  <div class="form-group form-check">
+    <input type="checkbox"
+           class="form-check-input"
+           id="{{ field_id }}"
+           name="{{ field_id }}"
+           {% if checked %}checked{% endif %}>
+    <label class="form-check-label" for="{{ field_id }}">{{ label }}</label>
+  </div>
+{%- endmacro %}

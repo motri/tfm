@@ -1,0 +1,182 @@
+{% extends base_template %}
+
+{% block head %}
+  {{ super() }}
+  <!-- Inline CSS for step-card padding & spacing -->
+  <style>
+    /* Give each card-body padding and flex alignment */
+    .step-card .card-body {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    /* Space out the dropdown from the buttons */
+    .step-card .step-type-select {
+      margin-bottom: 0.75rem;
+      width: 100%;
+    }
+    /* Add margin between Finish/Remove buttons */
+    .step-card .finish-step,
+    .step-card .remove-step {
+      margin-left: 0.5rem;
+    }
+    /* Add vertical space between cards */
+    .step-card {
+      margin-bottom: 1rem !important;
+    }
+    /* For finished cards, push Remove to the right */
+    .step-card .remove-step {
+      margin-left: auto;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <!-- Fixed header across the top of the page -->
+  <div id="header"
+       style="position: fixed; left: 0; width: 100%; display: flex;
+              align-items: center; padding: 10px 20px;
+              background-color: #d7e7ee; z-index: 1000;">
+    <img src="{{ url_for('dag_generator.static', filename='Vicomtech_BRTA_RGB.png') }}"
+         alt="Logo Vicomtech" width="180px">
+    <h1 style="margin-left: 20px; font-size: 1.5rem;">
+      Generador de DAGs para workflows multidisciplinares
+    </h1>
+  </div>
+
+  <!-- Main content shifted below header -->
+  <div class="builder-container" style="margin-top: 80px;">
+    <div class="row">
+      <!-- LEFT COLUMN -->
+      <div class="col-lg-5">
+        {% include 'partials/instructions.html' %}
+        {% include 'partials/add_step_button.html' %}
+        <button id="next-btn" class="btn btn-success mt-3" disabled>
+          Siguiente: Configura los Pasos
+        </button>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div>
+        <div>
+          <div class="col-lg-7" id="steps-container" style="padding: 10;">
+          </div>
+        </div>
+        <!-- JS will inject step editor cards here -->
+      </div>
+    </div>
+
+    <form id="workflow-form" method="post"
+          action="{{ url_for('dag_generator.configure_workflow') }}"
+          style="display:none;">
+      <input type="hidden" name="workflow" id="workflow-json">
+    </form>
+  </div>
+
+  <script>
+    const ICON_URLS = {
+      transfer: "{{ url_for('dag_generator.static', filename='file_transfer.png') }}",
+      git:      "{{ url_for('dag_generator.static', filename='gitlab.png') }}",
+      slurm:    "{{ url_for('dag_generator.static', filename='sbatch.png') }}"
+    };
+  </script>
+
+  <script>
+      // plugins/dag_generator_plugin/static/js/builder.js
+      document.addEventListener('DOMContentLoaded', () => {
+        // In‐memory workflow steps
+        const steps = [];
+      
+        // DOM refs
+        const stepsContainer = document.getElementById('steps-container');
+        const addStepBtn     = document.getElementById('add-step-btn');
+        const nextBtn        = document.getElementById('next-btn');
+        const form           = document.getElementById('workflow-form');
+        const hiddenInput    = document.getElementById('workflow-json');
+      
+
+  function renderSteps() {
+    stepsContainer.innerHTML = '';
+    steps.forEach((step, idx) => {
+      const card = document.createElement('div');
+      card.className = 'card mb-2 step-card';
+      card.dataset.idx = idx;
+
+      if (!step.type) {
+        // … existing unfinished logic …
+        card.innerHTML = `
+          <div class="card-body">
+            <label for="step-type-${idx}">Paso ${idx+1}: selecciona el tipo</label>
+            <select id="step-type-${idx}" class="form-control step-type-select">
+              <option value="">-- selecciona uno --</option>
+              <option value="transfer">Transferir Datos al HPC</option>
+              <option value="git">Git Clone/Fetch</option>
+              <option value="slurm">Ejecutar SLURM Job</option>
+            </select>
+            <div class="mt-2" style="padding-top:10px">
+              <button class="btn btn-sm btn-info finish-step">Agregar</button>
+              <button class="btn btn-sm btn-danger remove-step">Borrar</button>
+            </div>
+          </div>`;
+      } else {
+        // ** Finished step: show icon + text + Remove **
+        const iconUrl = ICON_URLS[step.type];
+        card.innerHTML = `
+          <div class="card-body d-flex align-items-center">
+            <img src="${iconUrl}" class="step-icon" alt="${step.type}">
+            <span class="step-label">Paso ${idx+1}</span>
+            <button class="btn btn-sm btn-danger remove-step">Borrar</button>
+          </div>`;
+      }
+
+      stepsContainer.appendChild(card);
+    });
+
+    const allTyped = steps.length > 0 && steps.every(s => !!s.type);
+    nextBtn.disabled = !allTyped;
+  }
+      
+      
+        // Add a new blank step
+        addStepBtn.addEventListener('click', () => {
+          steps.push({ type: null, params: {} });
+          renderSteps();
+        });
+      
+        // Delegate clicks for Finish and Remove buttons
+        stepsContainer.addEventListener('click', e => {
+          const card = e.target.closest('.step-card');
+          if (!card) return;
+          const idx = Number(card.dataset.idx);
+        
+          // Finish: set type and re-render
+          if (e.target.matches('.finish-step')) {
+            const select = card.querySelector('.step-type-select');
+            if (select.value) {
+              steps[idx].type = select.value;
+              renderSteps();
+            } else {
+              alert('Please select a step type before finishing.');
+            }
+          }
+        
+          // Remove: delete this step and re-render
+          if (e.target.matches('.remove-step')) {
+            steps.splice(idx, 1);
+            renderSteps();
+          }
+        });
+      
+        // Next: serialize and submit
+        nextBtn.addEventListener('click', () => {
+          hiddenInput.value = JSON.stringify(steps.map(s => ({ type: s.type })));
+          form.submit();
+        });
+      
+        // Initial render
+        renderSteps();
+      });
+
+    </script>
+{% endblock %}
