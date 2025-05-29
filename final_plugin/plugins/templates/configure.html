@@ -13,32 +13,32 @@
 
 {% block content %}
 <div class="configure-container container-fluid">
-  <div class="card workflow-config mb-4">
-    <div class="card-header"><h4>Configuración General del Workflow</h4></div>
-    <div class="card-body">
-      {% from 'macros/form_fields.html' import text_input, url_input %}
-      {{ text_input(None, 'workflow_name',        'Nombre del Workflow',        True) }}
-      {{ text_input(None, 'workflow_description', 'Descripción',               False) }}
-      {{ text_input(None, 'workflow_owner',       'Propietario',                True) }}
-      {{ text_input(None, 'workflow_email',       'Email de notificaciones',    False) }}
-      {{ text_input(None, 'workflow_tags',        'Tags (coma separada)',       False) }}
+  <form method="post" action="{{ url_for('dag_generator.generate_dags') }}">
+    <div class="card workflow-config mb-4">
+      <div class="card-header"><h4>Configuración General del Workflow</h4></div>
+      <div class="card-body">
+        {% from 'macros/form_fields.html' import text_input %}
+        {{ text_input(None, 'workflow_name',        'Nombre del Workflow',       True) }}
+        {{ text_input(None, 'workflow_description', 'Descripción',               False) }}
+        {{ text_input(None, 'workflow_owner',       'Propietario',               True) }}
+        {{ text_input(None, 'workflow_email',       'Email de notificaciones',   False) }}
+        {{ text_input(None, 'workflow_tags',        'Tags (coma separada)',      False) }}
 
-      <label>Programación</label>
-      <div class="form-group">
-        <select name="schedule_type" class="form-control" required>
-          <option value="manual">Disparo manual</option>
-          <option value="scheduled">Programado</option>
-        </select>
-      </div>
-      {{ text_input(None, 'schedule_interval', 'Intervalo (cron/preset)', False) }}
-      {{ text_input(None, 'start_date',        'Fecha de inicio (YYYY-MM-DD)', False) }}
-      <div class="form-group form-check">
-        <input class="form-check-input" type="checkbox" id="catchup" name="catchup">
-        <label class="form-check-label" for="catchup">Habilitar catchup</label>
+        <label>Programación</label>
+        <div class="form-group">
+          <select name="schedule_type" class="form-control" required>
+            <option value="manual">Disparo manual</option>
+            <option value="scheduled">Programado</option>
+          </select>
+        </div>
+        {{ text_input(None, 'schedule_interval', 'Intervalo (cron/preset)', False) }}
+        {{ text_input(None, 'start_date',        'Fecha de inicio (YYYY-MM-DD)', False) }}
+        <div class="form-group form-check">
+          <input class="form-check-input" type="checkbox" id="catchup" name="catchup">
+          <label class="form-check-label" for="catchup">Habilitar catchup</label>
+        </div>
       </div>
     </div>
-  </div>
-  <form method="post" action="{{ url_for('dag_generator.generate_dags') }}">
     {% from 'macros/form_fields.html' import text_input, url_input, number_input, select_input, checkbox_input %}
     {% for step in steps %}
       {% set idx = loop.index0 %}
@@ -47,32 +47,31 @@
         <div class="card-body">
           {% if step.type == 'transfer' %}
             {{ select_input( idx, 'minio_conn_id', 'MinIO Conn ID', options=conn_list('aws'), required=True) }}
-            {{ text_input(    idx, 'source_bucket',    'Bucket de origin', True) }}
-            {{ text_input(   idx, 'dest_path_gpfs',   'Destino GPFS',     True) }}
-            {{ number_input(idx, 'batch_size',        'Tamaño de lote',   False) }}
-            {{ number_input(idx, 'parallel_transfers','Transferencias simultáneas', False) }}
-            {{ checkbox_input(idx, 'only_latest',      'Solo última versión') }}
+            {{ text_input(   idx, 'source_bucket',   'Bucket de origen',        True) }}
+            {{ text_input(   idx, 'dest_path_gpfs',  'Destino GPFS',            True) }}
+            {{ number_input(idx, 'batch_size',       'Tamaño de lote',          False) }}
+            {{ number_input(idx, 'parallel_transfers','Transfers paralelos',     False) }}
+            {{ checkbox_input(idx, 'only_latest',     'Solo última versión') }}
           {% elif step.type == 'git' %}
             {{ select_input( idx, 'repo_type', 'Tipo de repositorio', options=['gitlab','github'], required=True) }}
-            {{ url_input(    idx, 'repo_url',  'URL del repositorio', True) }}
-            {{ text_input(   idx, 'branch_or_tag','Rama o etiqueta',    False) }}
-            {{ text_input(   idx, 'target_path', 'Ruta de staging',     True) }}
+            {{ url_input(    idx, 'repo_url',  'URL del repositorio',      True) }}
+            {{ text_input(   idx, 'branch_or_tag','Rama o etiqueta',       False) }}
+            {{ text_input(   idx, 'target_path', 'Ruta de staging',         True) }}
             {{ text_input(   idx, 'subdirectory','Subdirectorio (opcional)', False) }}
           {% elif step.type == 'slurm' %}
             {{ select_input( idx, 'ssh_conn_id', 'Conexión SSH HPC', options=conn_list('ssh'), required=True) }}
-            {{ text_input(   idx, 'script',      'Ruta del script .sh', True) }}
-            {{ text_input(   idx, 'partition',   'Partición SLURM',     False) }}
-            {{ text_input(   idx, 'qos',         'QoS',                  False) }}
-            {{ text_input(   idx, 'job_name',    'Nombre del trabajo',   False) }}
-            {{ text_input(   idx, 'time_limit',  'Límite de tiempo',     False) }}
-            {{ text_input(   idx, 'cpus_per_task','CPUs por tarea',      False) }}
-            {{ text_input(   idx, 'mem',         'Memoria',              False) }}
-            {{ text_input(   idx, 'extra_sbatch_args','Args extra',    False) }}
+            {{ text_input(   idx, 'script',     'Ruta del script .sh',     True) }}
+            {{ text_input(   idx, 'partition',  'Partición SLURM',         False) }}
+            {{ text_input(   idx, 'qos',        'QoS',                      False) }}
+            {{ text_input(   idx, 'job_name',   'Nombre del trabajo',       False) }}
+            {{ text_input(   idx, 'time_limit', 'Límite de tiempo',         False) }}
+            {{ text_input(   idx, 'cpus_per_task','CPUs por tarea',         False) }}
+            {{ text_input(   idx, 'mem',        'Memoria',                  False) }}
+            {{ text_input(   idx, 'extra_sbatch_args','Args extra',       False) }}
           {% endif %}
         </div>
       </div>
     {% endfor %}
-
     <button type="submit" class="btn btn-success">Generar DAGs</button>
   </form>
 </div>

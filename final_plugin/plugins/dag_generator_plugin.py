@@ -53,6 +53,8 @@ def generate_dags():
     raw = session.pop("workflow_steps", "[]")
     step_defs = json.loads(raw)
 
+    form = request.form
+
     global_cfg = {
         'workflow_name':      request.form.get('workflow_name', ''),
         'workflow_description': request.form.get('workflow_description', ''),
@@ -64,6 +66,19 @@ def generate_dags():
         'catchup':            'catchup' in request.form,
     }
 
+    for idx, step in enumerate(step_defs):
+        prefix = f"step{idx}_"
+        params = {}
+        for key, val in form.items():
+            if key.startswith(prefix):
+                name = key[len(prefix):]   # e.g. "ssh_conn_id"
+                # Si fuera checkbox
+                if isinstance(val, str) and val.lower() in ("on", "true"):
+                    params[name] = True
+                else:
+                    params[name] = val
+        step['params'] = params
+    
     generated = build_dag_files(step_defs, global_cfg, current_app.jinja_env)
 
     flash(f"Generated {len(generated)} DAG(s): {', '.join(generated)}", "success")
