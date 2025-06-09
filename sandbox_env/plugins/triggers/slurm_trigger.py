@@ -15,7 +15,7 @@ class SlurmJobTrigger(BaseTrigger):
 
     def serialize(self):
         return (
-            "slurm_plugin.slurm_trigger.SlurmJobTrigger",
+            "slurm_trigger.SlurmJobTrigger",
             {
                 "ssh_conn_id": self.ssh_conn_id,
                 "job_id": self.job_id,
