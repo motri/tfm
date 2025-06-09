@@ -1,0 +1,51 @@
+{% extends base_template %}
+
+{% block page_title %}Monitor SLURM Jobs{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Monitor SLURM Jobs</h2>
+  <table id="jobs-table" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Alias</th><th>DAG ID</th><th>Run ID</th><th>Job ID</th><th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      {# Aquí puedes prerenderizar filas o dejarlas vacías y llenarlas vía JS #}
+      <tr data-dag="slurm_submit_example" data-task="submit_job">
+        <td class="alias-cell">–</td>
+        <td class="dag-cell">slurm_submit_example</td>
+        <td class="run-cell">–</td>
+        <td class="jobid-cell">–</td>
+        <td class="status-cell">–</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+async function refreshStatuses() {
+    for (const row of document.querySelectorAll("#jobs-table tbody tr")) {
+      const dag  = row.dataset.dag;
+      const task = row.dataset.task;
+      try {
+        const res = await fetch(`/slurm-ui/status/${dag}/${task}`);
+        if (!res.ok) throw new Error();
+        const { alias, run_id, job_id, status } = await res.json();
+        row.querySelector(".alias-cell").innerText = alias  || "–";
+        row.querySelector(".run-cell").innerText   = run_id || "–";
+        row.querySelector(".jobid-cell").innerText = job_id || "–";
+        row.querySelector(".status-cell").innerText= status || "–";
+      } catch {
+        row.querySelector(".status-cell").innerText = "N/A";
+      }
+    }
+  }
+  
+  setInterval(refreshStatuses, 10000);
+  refreshStatuses();
+</script>
+{% endblock %}
