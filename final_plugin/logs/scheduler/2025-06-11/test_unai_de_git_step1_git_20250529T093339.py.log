@@ -1104,3 +1104,24 @@
 [2025-06-11T08:40:25.936+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:25.936+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-06-11T08:40:25.958+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:25.958+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_de_git_step1_git_20250529T093339 to None, run_after=None
 [2025-06-11T08:40:25.981+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py took 0.093 seconds
+[2025-06-11T08:40:56.646+0000] {processor.py:186} INFO - Started process (PID=11896) to work on /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:40:56.647+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py for tasks to queue
+[2025-06-11T08:40:56.651+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:56.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:40:56.663+0000] {processor.py:925} INFO - DAG(s) 'test_unai_de_git_step1_git_20250529T093339' retrieved from /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:40:56.688+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:56.688+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:40:56.703+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:56.703+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_de_git_step1_git_20250529T093339 to None, run_after=None
+[2025-06-11T08:40:56.723+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py took 0.086 seconds
+[2025-06-11T08:41:27.357+0000] {processor.py:186} INFO - Started process (PID=11971) to work on /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:41:27.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py for tasks to queue
+[2025-06-11T08:41:27.362+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:27.362+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:41:27.374+0000] {processor.py:925} INFO - DAG(s) 'test_unai_de_git_step1_git_20250529T093339' retrieved from /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:41:27.394+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:27.393+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:41:27.409+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:27.408+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_de_git_step1_git_20250529T093339 to None, run_after=None
+[2025-06-11T08:41:27.429+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py took 0.079 seconds
+[2025-06-11T08:41:57.745+0000] {processor.py:186} INFO - Started process (PID=12046) to work on /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:41:57.746+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py for tasks to queue
+[2025-06-11T08:41:57.942+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:57.942+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:41:57.952+0000] {processor.py:925} INFO - DAG(s) 'test_unai_de_git_step1_git_20250529T093339' retrieved from /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py
+[2025-06-11T08:41:57.970+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:57.970+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:41:57.983+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:57.983+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_de_git_step1_git_20250529T093339 to None, run_after=None
+[2025-06-11T08:41:58.004+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_de_git_step1_git_20250529T093339.py took 0.271 seconds

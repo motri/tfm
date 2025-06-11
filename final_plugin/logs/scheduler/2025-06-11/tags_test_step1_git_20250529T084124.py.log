@@ -1104,3 +1104,24 @@
 [2025-06-11T08:40:30.132+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:30.132+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-06-11T08:40:30.148+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:30.147+0000] {dag.py:4180} INFO - Setting next_dagrun for tags_test_step1_git_20250529T084124 to None, run_after=None
 [2025-06-11T08:40:30.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tags_test_step1_git_20250529T084124.py took 0.089 seconds
+[2025-06-11T08:41:00.786+0000] {processor.py:186} INFO - Started process (PID=11904) to work on /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:41:00.787+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tags_test_step1_git_20250529T084124.py for tasks to queue
+[2025-06-11T08:41:00.790+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:00.789+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:41:00.800+0000] {processor.py:925} INFO - DAG(s) 'tags_test_step1_git_20250529T084124' retrieved from /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:41:00.818+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:00.818+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:41:00.834+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:00.834+0000] {dag.py:4180} INFO - Setting next_dagrun for tags_test_step1_git_20250529T084124 to None, run_after=None
+[2025-06-11T08:41:00.853+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tags_test_step1_git_20250529T084124.py took 0.075 seconds
+[2025-06-11T08:41:31.496+0000] {processor.py:186} INFO - Started process (PID=11979) to work on /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:41:31.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tags_test_step1_git_20250529T084124.py for tasks to queue
+[2025-06-11T08:41:31.500+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:31.500+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:41:31.510+0000] {processor.py:925} INFO - DAG(s) 'tags_test_step1_git_20250529T084124' retrieved from /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:41:31.532+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:31.531+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:41:31.547+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:31.546+0000] {dag.py:4180} INFO - Setting next_dagrun for tags_test_step1_git_20250529T084124 to None, run_after=None
+[2025-06-11T08:41:31.565+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tags_test_step1_git_20250529T084124.py took 0.076 seconds
+[2025-06-11T08:42:02.356+0000] {processor.py:186} INFO - Started process (PID=12054) to work on /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:42:02.357+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tags_test_step1_git_20250529T084124.py for tasks to queue
+[2025-06-11T08:42:02.360+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:42:02.360+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:42:02.366+0000] {processor.py:925} INFO - DAG(s) 'tags_test_step1_git_20250529T084124' retrieved from /opt/airflow/dags/tags_test_step1_git_20250529T084124.py
+[2025-06-11T08:42:02.381+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:42:02.381+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:42:02.395+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:42:02.394+0000] {dag.py:4180} INFO - Setting next_dagrun for tags_test_step1_git_20250529T084124 to None, run_after=None
+[2025-06-11T08:42:02.411+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tags_test_step1_git_20250529T084124.py took 0.263 seconds

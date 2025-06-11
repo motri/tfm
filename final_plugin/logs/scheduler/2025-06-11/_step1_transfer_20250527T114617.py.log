@@ -1104,3 +1104,24 @@
 [2025-06-11T08:40:32.989+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:32.989+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-06-11T08:40:33.016+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:40:33.016+0000] {dag.py:4180} INFO - Setting next_dagrun for _step1_transfer_20250527T114617 to None, run_after=None
 [2025-06-11T08:40:33.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_transfer_20250527T114617.py took 0.145 seconds
+[2025-06-11T08:41:03.706+0000] {processor.py:186} INFO - Started process (PID=11910) to work on /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:41:03.707+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_transfer_20250527T114617.py for tasks to queue
+[2025-06-11T08:41:03.710+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:03.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:41:03.720+0000] {processor.py:925} INFO - DAG(s) '_step1_transfer_20250527T114617' retrieved from /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:41:03.741+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:03.740+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:41:03.757+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:03.757+0000] {dag.py:4180} INFO - Setting next_dagrun for _step1_transfer_20250527T114617 to None, run_after=None
+[2025-06-11T08:41:03.777+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_transfer_20250527T114617.py took 0.078 seconds
+[2025-06-11T08:41:34.337+0000] {processor.py:186} INFO - Started process (PID=11984) to work on /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:41:34.338+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_transfer_20250527T114617.py for tasks to queue
+[2025-06-11T08:41:34.341+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:34.341+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:41:34.355+0000] {processor.py:925} INFO - DAG(s) '_step1_transfer_20250527T114617' retrieved from /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:41:34.374+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:34.373+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:41:34.388+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:41:34.388+0000] {dag.py:4180} INFO - Setting next_dagrun for _step1_transfer_20250527T114617 to None, run_after=None
+[2025-06-11T08:41:34.409+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_transfer_20250527T114617.py took 0.079 seconds
+[2025-06-11T08:42:04.754+0000] {processor.py:186} INFO - Started process (PID=12058) to work on /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:42:04.758+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/_step1_transfer_20250527T114617.py for tasks to queue
+[2025-06-11T08:42:04.761+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:42:04.760+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:42:04.775+0000] {processor.py:925} INFO - DAG(s) '_step1_transfer_20250527T114617' retrieved from /opt/airflow/dags/_step1_transfer_20250527T114617.py
+[2025-06-11T08:42:04.796+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:42:04.795+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-11T08:42:04.813+0000] {logging_mixin.py:190} INFO - [2025-06-11T08:42:04.813+0000] {dag.py:4180} INFO - Setting next_dagrun for _step1_transfer_20250527T114617 to None, run_after=None
+[2025-06-11T08:42:04.832+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/_step1_transfer_20250527T114617.py took 0.084 seconds
