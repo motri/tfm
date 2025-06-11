@@ -1776,3 +1776,332 @@
 [2025-06-09T11:21:45.666+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:21:45.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-06-09T11:21:45.693+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:21:45.693+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
 [2025-06-09T11:21:45.718+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.106 seconds
+[2025-06-09T11:22:15.940+0000] {processor.py:186} INFO - Started process (PID=18878) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:22:15.942+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:22:15.949+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:22:15.948+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:22:15.964+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:22:16.000+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:22:16.000+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:22:16.028+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:22:16.028+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:22:16.057+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.125 seconds
+[2025-06-09T11:22:46.308+0000] {processor.py:186} INFO - Started process (PID=18953) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:22:46.310+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:22:46.315+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:22:46.314+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:22:46.327+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:22:46.356+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:22:46.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:22:46.384+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:22:46.383+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:22:46.406+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.106 seconds
+[2025-06-09T11:23:16.489+0000] {processor.py:186} INFO - Started process (PID=19027) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:23:16.491+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:23:16.495+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:23:16.494+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:23:16.508+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:23:16.532+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:23:16.532+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:23:16.561+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:23:16.561+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:23:16.584+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.105 seconds
+[2025-06-09T11:23:46.977+0000] {processor.py:186} INFO - Started process (PID=19102) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:23:46.979+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:23:46.985+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:23:46.984+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:23:46.996+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:23:47.021+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:23:47.020+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:23:47.047+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:23:47.046+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:23:47.073+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.106 seconds
+[2025-06-09T11:24:17.278+0000] {processor.py:186} INFO - Started process (PID=19177) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:24:17.279+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:24:17.283+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:24:17.282+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:24:17.294+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:24:17.322+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:24:17.322+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:24:17.351+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:24:17.350+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:24:17.373+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.103 seconds
+[2025-06-09T11:24:47.597+0000] {processor.py:186} INFO - Started process (PID=19252) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:24:47.599+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:24:47.604+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:24:47.603+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:24:47.616+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:24:47.644+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:24:47.644+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:24:47.671+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:24:47.671+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:24:47.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.110 seconds
+[2025-06-09T11:25:17.908+0000] {processor.py:186} INFO - Started process (PID=19326) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:25:17.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:25:17.914+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:25:17.913+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:25:17.924+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:25:17.954+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:25:17.954+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:25:17.981+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:25:17.981+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:25:18.012+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.114 seconds
+[2025-06-09T11:25:48.209+0000] {processor.py:186} INFO - Started process (PID=19401) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:25:48.211+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:25:48.215+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:25:48.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:25:48.227+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:25:48.254+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:25:48.254+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:25:48.279+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:25:48.279+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:25:48.300+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.099 seconds
+[2025-06-09T11:26:18.614+0000] {processor.py:186} INFO - Started process (PID=19476) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:26:18.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:26:18.620+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:26:18.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:26:18.631+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:26:18.656+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:26:18.655+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:26:18.681+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:26:18.681+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:26:18.703+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.100 seconds
+[2025-06-09T11:26:48.861+0000] {processor.py:186} INFO - Started process (PID=19551) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:26:48.862+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:26:48.865+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:26:48.865+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:26:48.877+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:26:48.900+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:26:48.900+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:26:48.928+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:26:48.928+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:26:48.953+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.100 seconds
+[2025-06-09T11:27:19.537+0000] {processor.py:186} INFO - Started process (PID=19626) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:27:19.539+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:27:19.542+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:27:19.542+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:27:19.554+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:27:19.583+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:27:19.583+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:27:19.609+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:27:19.609+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:27:19.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.105 seconds
+[2025-06-09T11:27:50.072+0000] {processor.py:186} INFO - Started process (PID=19701) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:27:50.075+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:27:50.080+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:27:50.079+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:27:50.095+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:27:50.140+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:27:50.139+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:27:50.241+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:27:50.241+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:27:50.287+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.227 seconds
+[2025-06-09T11:28:20.634+0000] {processor.py:186} INFO - Started process (PID=19776) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:28:20.636+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:28:20.639+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:28:20.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:28:20.655+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:28:20.683+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:28:20.683+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:28:20.712+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:28:20.711+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:28:20.738+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.114 seconds
+[2025-06-09T11:28:51.006+0000] {processor.py:186} INFO - Started process (PID=19851) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:28:51.007+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:28:51.011+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:28:51.010+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:28:51.021+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:28:51.048+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:28:51.048+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:28:51.075+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:28:51.075+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:28:51.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.103 seconds
+[2025-06-09T11:29:21.217+0000] {processor.py:186} INFO - Started process (PID=19926) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:29:21.218+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:29:21.223+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:29:21.222+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:29:21.235+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:29:21.260+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:29:21.260+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:29:21.284+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:29:21.284+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:29:21.307+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.098 seconds
+[2025-06-09T11:29:51.977+0000] {processor.py:186} INFO - Started process (PID=20000) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:29:51.978+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:29:51.984+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:29:51.983+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:29:52.001+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:29:52.037+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:29:52.037+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:29:52.063+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:29:52.063+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:29:52.090+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.120 seconds
+[2025-06-09T11:30:22.197+0000] {processor.py:186} INFO - Started process (PID=20075) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:30:22.198+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:30:22.201+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:30:22.201+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:30:22.210+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:30:22.235+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:30:22.234+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:30:22.259+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:30:22.259+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:30:22.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.094 seconds
+[2025-06-09T11:30:52.412+0000] {processor.py:186} INFO - Started process (PID=20149) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:30:52.414+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:30:52.417+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:30:52.417+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:30:52.430+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:30:52.453+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:30:52.453+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:30:52.480+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:30:52.480+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:30:52.499+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.097 seconds
+[2025-06-09T11:31:22.752+0000] {processor.py:186} INFO - Started process (PID=20224) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:31:22.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:31:22.757+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:31:22.757+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:31:22.773+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:31:22.794+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:31:22.794+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:31:22.823+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:31:22.822+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:31:22.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.102 seconds
+[2025-06-09T11:31:52.940+0000] {processor.py:186} INFO - Started process (PID=20299) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:31:52.941+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:31:52.944+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:31:52.943+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:31:52.953+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:31:52.974+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:31:52.974+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:31:52.999+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:31:52.998+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:31:53.021+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.091 seconds
+[2025-06-09T11:32:23.624+0000] {processor.py:186} INFO - Started process (PID=20374) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:32:23.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:32:23.629+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:32:23.628+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:32:23.640+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:32:23.667+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:32:23.666+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:32:23.693+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:32:23.693+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:32:23.717+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.103 seconds
+[2025-06-09T11:32:53.968+0000] {processor.py:186} INFO - Started process (PID=20455) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:32:53.970+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:32:53.974+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:32:53.974+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:32:53.989+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:32:54.015+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:32:54.015+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:32:54.043+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:32:54.043+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:32:54.067+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.106 seconds
+[2025-06-09T11:33:24.189+0000] {processor.py:186} INFO - Started process (PID=20530) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:33:24.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:33:24.194+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:33:24.194+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:33:24.203+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:33:24.232+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:33:24.231+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:33:24.262+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:33:24.261+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:33:24.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.104 seconds
+[2025-06-09T11:33:54.992+0000] {processor.py:186} INFO - Started process (PID=20605) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:33:54.994+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:33:54.997+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:33:54.997+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:33:55.007+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:33:55.033+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:33:55.032+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:33:55.058+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:33:55.057+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:33:55.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.102 seconds
+[2025-06-09T11:34:25.759+0000] {processor.py:186} INFO - Started process (PID=20680) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:34:25.761+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:34:25.764+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:34:25.764+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:34:25.776+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:34:25.801+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:34:25.801+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:34:25.827+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:34:25.827+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:34:25.857+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.106 seconds
+[2025-06-09T11:34:56.208+0000] {processor.py:186} INFO - Started process (PID=20754) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:34:56.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:34:56.214+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:34:56.213+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:34:56.225+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:34:56.250+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:34:56.249+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:34:56.276+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:34:56.276+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:34:56.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.101 seconds
+[2025-06-09T11:35:26.468+0000] {processor.py:186} INFO - Started process (PID=20829) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:35:26.470+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:35:26.474+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:35:26.473+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:35:26.487+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:35:26.517+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:35:26.517+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:35:26.542+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:35:26.542+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:35:26.562+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.102 seconds
+[2025-06-09T11:35:57.109+0000] {processor.py:186} INFO - Started process (PID=20904) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:35:57.111+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:35:57.114+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:35:57.113+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:35:57.126+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:35:57.151+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:35:57.150+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:35:57.177+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:35:57.177+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:35:57.201+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.099 seconds
+[2025-06-09T11:36:27.375+0000] {processor.py:186} INFO - Started process (PID=20979) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:36:27.376+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:36:27.380+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:36:27.380+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:36:27.394+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:36:27.418+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:36:27.417+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:36:27.442+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:36:27.442+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:36:27.466+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.098 seconds
+[2025-06-09T11:36:58.425+0000] {processor.py:186} INFO - Started process (PID=21054) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:36:58.426+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:36:58.430+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:36:58.430+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:36:58.444+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:36:58.470+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:36:58.470+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:36:58.494+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:36:58.494+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:36:58.514+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.098 seconds
+[2025-06-09T11:37:28.721+0000] {processor.py:186} INFO - Started process (PID=21129) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:37:28.722+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:37:28.726+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:37:28.726+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:37:28.738+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:37:28.766+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:37:28.765+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:37:28.793+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:37:28.793+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:37:28.813+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.102 seconds
+[2025-06-09T11:37:59.437+0000] {processor.py:186} INFO - Started process (PID=21202) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:37:59.438+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:37:59.441+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:37:59.440+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:37:59.451+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:37:59.470+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:37:59.470+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:37:59.494+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:37:59.494+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:37:59.517+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.087 seconds
+[2025-06-09T11:38:29.848+0000] {processor.py:186} INFO - Started process (PID=21277) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:38:29.849+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:38:29.853+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:38:29.852+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:38:29.863+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:38:29.883+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:38:29.883+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:38:29.908+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:38:29.908+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:38:29.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.090 seconds
+[2025-06-09T11:39:00.137+0000] {processor.py:186} INFO - Started process (PID=21352) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:39:00.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:39:00.141+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:39:00.141+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:39:00.154+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:39:00.178+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:39:00.178+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:39:00.205+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:39:00.205+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:39:00.224+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.094 seconds
+[2025-06-09T11:39:30.492+0000] {processor.py:186} INFO - Started process (PID=21421) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:39:30.494+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:39:30.497+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:39:30.496+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:39:30.505+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:39:30.528+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:39:30.528+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:39:30.554+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:39:30.553+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:39:30.576+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.092 seconds
+[2025-06-09T11:40:01.189+0000] {processor.py:186} INFO - Started process (PID=21496) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:40:01.190+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:40:01.193+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:40:01.192+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:40:01.203+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:40:01.224+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:40:01.224+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:40:01.248+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:40:01.247+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:40:01.269+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.087 seconds
+[2025-06-09T11:40:31.507+0000] {processor.py:186} INFO - Started process (PID=21571) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:40:31.508+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:40:31.511+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:40:31.511+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:40:31.520+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:40:31.544+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:40:31.544+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:40:31.573+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:40:31.572+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:40:31.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.095 seconds
+[2025-06-09T11:41:01.725+0000] {processor.py:186} INFO - Started process (PID=21646) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:41:01.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:41:01.730+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:41:01.729+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:41:01.740+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:41:01.769+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:41:01.768+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:41:01.792+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:41:01.792+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:41:01.816+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.099 seconds
+[2025-06-09T11:41:32.020+0000] {processor.py:186} INFO - Started process (PID=21721) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:41:32.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:41:32.028+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:41:32.028+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:41:32.039+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:41:32.077+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:41:32.076+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:41:32.111+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:41:32.110+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:41:32.141+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.129 seconds
+[2025-06-09T11:42:02.556+0000] {processor.py:186} INFO - Started process (PID=21796) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:42:02.558+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:42:02.561+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:42:02.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:42:02.570+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:42:02.591+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:42:02.591+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:42:02.615+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:42:02.614+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:42:02.634+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.091 seconds
+[2025-06-09T11:42:32.766+0000] {processor.py:186} INFO - Started process (PID=21871) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:42:32.768+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:42:32.771+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:42:32.770+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:42:32.782+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:42:32.807+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:42:32.807+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:42:32.832+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:42:32.832+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:42:32.856+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.098 seconds
+[2025-06-09T11:43:03.015+0000] {processor.py:186} INFO - Started process (PID=21946) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:43:03.016+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:43:03.020+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:43:03.019+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:43:03.030+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:43:03.054+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:43:03.054+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:43:03.081+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:43:03.081+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:43:03.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.096 seconds
+[2025-06-09T11:43:33.205+0000] {processor.py:186} INFO - Started process (PID=22021) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:43:33.207+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:43:33.210+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:43:33.210+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:43:33.221+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:43:33.244+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:43:33.244+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:43:33.269+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:43:33.269+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:43:33.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.092 seconds
+[2025-06-09T11:44:03.687+0000] {processor.py:186} INFO - Started process (PID=22096) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:44:03.689+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:44:03.692+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:44:03.692+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:44:03.701+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:44:03.727+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:44:03.726+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:44:03.754+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:44:03.754+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:44:03.776+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.097 seconds
+[2025-06-09T11:44:34.155+0000] {processor.py:186} INFO - Started process (PID=22171) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:44:34.157+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:44:34.160+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:44:34.159+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:44:34.170+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:44:34.194+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:44:34.193+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:44:34.218+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:44:34.218+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:44:34.240+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.093 seconds
+[2025-06-09T11:45:04.613+0000] {processor.py:186} INFO - Started process (PID=22246) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:45:04.614+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:45:04.618+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:45:04.617+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:45:04.630+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:45:04.658+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:45:04.658+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:45:04.686+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:45:04.686+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:45:04.711+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.111 seconds
+[2025-06-09T11:45:35.077+0000] {processor.py:186} INFO - Started process (PID=22321) to work on /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:45:35.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/slurm_20250428_073538.py for tasks to queue
+[2025-06-09T11:45:35.086+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:45:35.085+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:45:35.105+0000] {processor.py:925} INFO - DAG(s) 'slurm_20250428_073538' retrieved from /opt/airflow/dags/slurm_20250428_073538.py
+[2025-06-09T11:45:35.142+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:45:35.142+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-09T11:45:35.175+0000] {logging_mixin.py:190} INFO - [2025-06-09T11:45:35.175+0000] {dag.py:4180} INFO - Setting next_dagrun for slurm_20250428_073538 to 2025-04-28 00:00:00+00:00, run_after=2025-04-28 00:00:00+00:00
+[2025-06-09T11:45:35.219+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/slurm_20250428_073538.py took 0.151 seconds

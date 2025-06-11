@@ -1,0 +1,451 @@
+[2025-06-10T07:48:56.633+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:48:56.657+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:48:56.666+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:48:56.668+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-10T07:48:56.688+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:48:56.695+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=815) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:48:56.698+0000] {standard_task_runner.py:72} INFO - Started process 817 to run task
+[2025-06-10T07:48:56.699+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '169', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpqn7d2tua']
+[2025-06-10T07:48:56.703+0000] {standard_task_runner.py:105} INFO - Job 169: Subtask submit_slurm
+[2025-06-10T07:48:56.758+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:48:56.855+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='slurm_async_job' AIRFLOW_CTX_TASK_ID='submit_slurm' AIRFLOW_CTX_EXECUTION_DATE='2025-06-10T07:48:54.189286+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-10T07:48:54.189286+00:00'
+[2025-06-10T07:48:56.859+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:48:56.859+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:48:56.860+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:48:56.860+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:48:56.861+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:48:56.872+0000] {base.py:84} INFO - Retrieving connection 'hpc_ssh'
+[2025-06-10T07:48:56.874+0000] {ssh.py:286} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2025-06-10T07:48:56.934+0000] {transport.py:1944} INFO - Connected (version 2.0, client OpenSSH_8.0)
+[2025-06-10T07:48:57.292+0000] {transport.py:1944} INFO - Authentication (password) successful!
+[2025-06-10T07:48:59.062+0000] {slurm_operator.py:32} INFO - Submitted SLURM job 17160: Submitted batch job 17160
+[2025-06-10T07:48:59.080+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:48:59.098+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:48:59.099+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:48:59.141+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:48:59.142+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:04.767+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:04.786+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:04.795+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:04.796+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:04.812+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:04.821+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=821) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:04.823+0000] {standard_task_runner.py:72} INFO - Started process 823 to run task
+[2025-06-10T07:49:04.824+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpwsylrk8b']
+[2025-06-10T07:49:04.826+0000] {standard_task_runner.py:105} INFO - Job 170: Subtask submit_slurm
+[2025-06-10T07:49:04.879+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:04.956+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:04.957+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:04.958+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:04.958+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:04.959+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:04.976+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:04.991+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:04.992+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:05.007+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:05.008+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:10.933+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:10.952+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:10.961+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:10.962+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:10.980+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:10.988+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=825) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:10.991+0000] {standard_task_runner.py:72} INFO - Started process 827 to run task
+[2025-06-10T07:49:10.992+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '171', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpeft23s7l']
+[2025-06-10T07:49:10.994+0000] {standard_task_runner.py:105} INFO - Job 171: Subtask submit_slurm
+[2025-06-10T07:49:11.044+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:11.121+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:11.122+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:11.123+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:11.123+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:11.124+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:11.141+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:11.158+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:11.159+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:11.176+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:11.177+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:16.859+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:16.877+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:16.886+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:16.887+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:16.904+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:16.911+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=829) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:16.913+0000] {standard_task_runner.py:72} INFO - Started process 831 to run task
+[2025-06-10T07:49:16.914+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '172', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpf7lyes9t']
+[2025-06-10T07:49:16.916+0000] {standard_task_runner.py:105} INFO - Job 172: Subtask submit_slurm
+[2025-06-10T07:49:16.963+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:17.038+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:17.039+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:17.039+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:17.039+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:17.040+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:17.055+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:17.070+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:17.071+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:17.096+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:17.096+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:22.792+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:22.810+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:22.820+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:22.821+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:22.837+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:22.844+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=833) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:22.846+0000] {standard_task_runner.py:72} INFO - Started process 835 to run task
+[2025-06-10T07:49:22.847+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '173', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpz4_26k8w']
+[2025-06-10T07:49:22.849+0000] {standard_task_runner.py:105} INFO - Job 173: Subtask submit_slurm
+[2025-06-10T07:49:22.912+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:23.007+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:23.008+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:23.010+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:23.011+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:23.012+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:23.032+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:23.054+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:23.054+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:23.108+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:23.109+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:30.807+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:30.831+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:30.848+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:30.849+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:30.868+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:30.880+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=844) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:30.883+0000] {standard_task_runner.py:72} INFO - Started process 846 to run task
+[2025-06-10T07:49:30.885+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '174', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpnabco2tn']
+[2025-06-10T07:49:30.889+0000] {standard_task_runner.py:105} INFO - Job 174: Subtask submit_slurm
+[2025-06-10T07:49:30.957+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:31.057+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:31.059+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:31.063+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:31.065+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:31.066+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:31.093+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:31.119+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:31.119+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:31.152+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:31.153+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:39.047+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:39.065+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:39.074+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:39.075+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:39.090+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:39.097+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=848) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:39.099+0000] {standard_task_runner.py:72} INFO - Started process 850 to run task
+[2025-06-10T07:49:39.100+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '175', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmp0mghw5z_']
+[2025-06-10T07:49:39.102+0000] {standard_task_runner.py:105} INFO - Job 175: Subtask submit_slurm
+[2025-06-10T07:49:39.154+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:39.240+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:39.241+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:39.242+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:39.243+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:39.244+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:39.263+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:39.281+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:39.281+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:39.324+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:39.325+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:46.368+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:46.396+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:46.409+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:46.410+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:46.431+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:46.443+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=852) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:46.447+0000] {standard_task_runner.py:72} INFO - Started process 854 to run task
+[2025-06-10T07:49:46.447+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '176', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpmbrm6gxq']
+[2025-06-10T07:49:46.453+0000] {standard_task_runner.py:105} INFO - Job 176: Subtask submit_slurm
+[2025-06-10T07:49:46.516+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:46.593+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:46.594+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:46.595+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:46.595+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:46.596+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:46.613+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:46.630+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:46.631+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:46.676+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:46.677+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:52.388+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:52.416+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:52.439+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:52.443+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:52.482+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:52.502+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=856) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:52.508+0000] {standard_task_runner.py:72} INFO - Started process 858 to run task
+[2025-06-10T07:49:52.507+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '177', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmp8sr0cla3']
+[2025-06-10T07:49:52.511+0000] {standard_task_runner.py:105} INFO - Job 177: Subtask submit_slurm
+[2025-06-10T07:49:52.607+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:52.730+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:52.732+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:52.733+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:52.736+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:52.738+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:52.761+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:52.784+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:52.788+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:52.828+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:52.829+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:49:59.102+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:49:59.123+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:59.137+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:49:59.138+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:49:59.170+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:49:59.180+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=867) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:49:59.182+0000] {standard_task_runner.py:72} INFO - Started process 869 to run task
+[2025-06-10T07:49:59.184+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '178', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpckfw8fjq']
+[2025-06-10T07:49:59.190+0000] {standard_task_runner.py:105} INFO - Job 178: Subtask submit_slurm
+[2025-06-10T07:49:59.314+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:49:59.447+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:49:59.452+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:49:59.453+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:49:59.454+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:49:59.455+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:49:59.480+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:49:59.503+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:49:59.504+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:49:59.538+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:49:59.539+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:05.201+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:05.221+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:05.230+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:05.231+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:05.249+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:05.262+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=871) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:05.265+0000] {standard_task_runner.py:72} INFO - Started process 873 to run task
+[2025-06-10T07:50:05.271+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '179', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpfu5drbl5']
+[2025-06-10T07:50:05.273+0000] {standard_task_runner.py:105} INFO - Job 179: Subtask submit_slurm
+[2025-06-10T07:50:05.328+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:05.404+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:05.405+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:05.406+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:05.407+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:05.408+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:05.425+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:05.441+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:05.442+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:05.452+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:05.453+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:11.694+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:11.713+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:11.724+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:11.725+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:11.742+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:11.751+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=875) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:11.753+0000] {standard_task_runner.py:72} INFO - Started process 877 to run task
+[2025-06-10T07:50:11.754+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '180', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpp7jpfe34']
+[2025-06-10T07:50:11.756+0000] {standard_task_runner.py:105} INFO - Job 180: Subtask submit_slurm
+[2025-06-10T07:50:11.811+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:11.892+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:11.893+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:11.894+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:11.895+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:11.896+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:11.914+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:11.933+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:11.934+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:11.983+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:11.984+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:18.435+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:18.454+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:18.464+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:18.464+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:18.493+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:18.504+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=879) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:18.508+0000] {standard_task_runner.py:72} INFO - Started process 881 to run task
+[2025-06-10T07:50:18.510+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '181', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpo9qphzwg']
+[2025-06-10T07:50:18.517+0000] {standard_task_runner.py:105} INFO - Job 181: Subtask submit_slurm
+[2025-06-10T07:50:18.581+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:18.667+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:18.668+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:18.669+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:18.670+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:18.670+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:18.689+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:18.705+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:18.706+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:18.740+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:18.741+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:24.404+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:24.441+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:24.470+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:24.472+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:24.525+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:24.546+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=883) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:24.550+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '182', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmp05jd2jiz']
+[2025-06-10T07:50:24.554+0000] {standard_task_runner.py:105} INFO - Job 182: Subtask submit_slurm
+[2025-06-10T07:50:24.551+0000] {standard_task_runner.py:72} INFO - Started process 885 to run task
+[2025-06-10T07:50:24.723+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:24.899+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:24.905+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:24.908+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:24.909+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:24.910+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:24.940+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:24.966+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:24.968+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:24.998+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:24.999+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:32.767+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:32.805+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:32.823+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:32.825+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:32.860+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:32.876+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=887) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:32.879+0000] {standard_task_runner.py:72} INFO - Started process 896 to run task
+[2025-06-10T07:50:32.879+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '183', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpckrncjhx']
+[2025-06-10T07:50:32.880+0000] {standard_task_runner.py:105} INFO - Job 183: Subtask submit_slurm
+[2025-06-10T07:50:32.973+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:33.080+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:33.083+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:33.084+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:33.085+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:33.086+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:33.140+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:33.191+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:33.194+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:33.237+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:33.241+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:39.420+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:39.439+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:39.448+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:39.449+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:39.467+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:39.474+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=898) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:39.476+0000] {standard_task_runner.py:72} INFO - Started process 900 to run task
+[2025-06-10T07:50:39.477+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '184', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpiu03lsth']
+[2025-06-10T07:50:39.479+0000] {standard_task_runner.py:105} INFO - Job 184: Subtask submit_slurm
+[2025-06-10T07:50:39.533+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:39.621+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:39.622+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:39.623+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:39.624+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:39.625+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:39.647+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:39.665+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:39.666+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:39.704+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:39.704+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:46.374+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:46.394+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:46.404+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:46.405+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:46.425+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:46.436+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=902) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:46.438+0000] {standard_task_runner.py:72} INFO - Started process 904 to run task
+[2025-06-10T07:50:46.439+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '185', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpzwe93fc9']
+[2025-06-10T07:50:46.441+0000] {standard_task_runner.py:105} INFO - Job 185: Subtask submit_slurm
+[2025-06-10T07:50:46.497+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:46.580+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:46.582+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:46.582+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:46.583+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:46.583+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:46.600+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:46.618+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:46.619+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:46.664+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:46.664+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:53.152+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:53.173+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:53.183+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:53.184+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:53.202+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:53.212+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=906) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:53.214+0000] {standard_task_runner.py:72} INFO - Started process 908 to run task
+[2025-06-10T07:50:53.216+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '186', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmphwvb24f8']
+[2025-06-10T07:50:53.217+0000] {standard_task_runner.py:105} INFO - Job 186: Subtask submit_slurm
+[2025-06-10T07:50:53.274+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:53.363+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:53.364+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:53.365+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:53.365+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:53.366+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:53.385+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:53.404+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:53.407+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:53.437+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:53.438+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:50:59.312+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:50:59.333+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:59.342+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:50:59.343+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:50:59.360+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:50:59.369+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=910) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:50:59.371+0000] {standard_task_runner.py:72} INFO - Started process 912 to run task
+[2025-06-10T07:50:59.371+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '187', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmpiia2v873']
+[2025-06-10T07:50:59.373+0000] {standard_task_runner.py:105} INFO - Job 187: Subtask submit_slurm
+[2025-06-10T07:50:59.422+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:50:59.501+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:50:59.502+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:50:59.502+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:50:59.504+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:50:59.505+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:50:59.521+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-06-10T07:50:59.538+0000] {taskinstance.py:289} INFO - Pausing task as DEFERRED. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856
+[2025-06-10T07:50:59.541+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:50:59.593+0000] {local_task_job_runner.py:260} INFO - Task exited with return code 100 (task deferral)
+[2025-06-10T07:50:59.594+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-06-10T07:51:06.446+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-10T07:51:06.477+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:51:06.500+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [queued]>
+[2025-06-10T07:51:06.502+0000] {taskinstance.py:2865} INFO - Resuming after deferral
+[2025-06-10T07:51:06.544+0000] {taskinstance.py:2890} INFO - Executing <Task(SubmitAndMonitorSlurmJobOperator): submit_slurm> on 2025-06-10 07:48:54.189286+00:00
+[2025-06-10T07:51:06.556+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=914) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-10T07:51:06.559+0000] {standard_task_runner.py:72} INFO - Started process 923 to run task
+[2025-06-10T07:51:06.559+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'slurm_async_job', 'submit_slurm', 'manual__2025-06-10T07:48:54.189286+00:00', '--job-id', '188', '--raw', '--subdir', 'DAGS_FOLDER/slurm_test_job.py', '--cfg-path', '/tmp/tmp8iu_hvqg']
+[2025-06-10T07:51:06.563+0000] {standard_task_runner.py:105} INFO - Job 188: Subtask submit_slurm
+[2025-06-10T07:51:06.622+0000] {task_command.py:467} INFO - Running <TaskInstance: slurm_async_job.submit_slurm manual__2025-06-10T07:48:54.189286+00:00 [running]> on host 9406efa7f156
+[2025-06-10T07:51:06.707+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-10T07:51:06.708+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-10T07:51:06.709+0000] {logging_mixin.py:190} INFO - Current task name:submit_slurm state:running start_date:2025-06-10 07:48:56.658235+00:00
+[2025-06-10T07:51:06.710+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job and current dag run status:running
+[2025-06-10T07:51:06.710+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-10T07:51:06.728+0000] {slurm_operator.py:66} INFO - SLURM job 17160 COMPLETED
+[2025-06-10T07:51:06.753+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-10T07:51:06.755+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=slurm_async_job, task_id=submit_slurm, run_id=manual__2025-06-10T07:48:54.189286+00:00, execution_date=20250610T074854, start_date=20250610T074856, end_date=20250610T075106
+[2025-06-10T07:51:06.790+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-10T07:51:06.791+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-10T07:51:06.792+0000] {logging_mixin.py:190} INFO - Dag name:slurm_async_job queued_at:2025-06-10 07:48:54.203889+00:00
+[2025-06-10T07:51:06.793+0000] {logging_mixin.py:190} INFO - Task hostname:9406efa7f156 operator:SubmitAndMonitorSlurmJobOperator
+[2025-06-10T07:51:06.826+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-10T07:51:06.846+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-06-10T07:51:06.848+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

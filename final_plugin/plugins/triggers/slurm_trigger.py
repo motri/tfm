@@ -29,12 +29,20 @@ class SlurmJobTrigger(BaseTrigger):
 
         while True:
             stdin, stdout, stderr = client.exec_command(
-                f"sacct --jobs={self.job_id} --format=State --noheader"
+                f"sacct --jobs={self.job_id} --format=State"
             )
-            output = stdout.read().decode()
-            self.log.info(f"[SLURM {self.job_id}] sacct output: {output.strip()}")
+            output = stdout.read().decode().strip()
+            err_output = stderr.read().decode().strip()
 
-            if "COMPLETED" in output:
+            self.log.info(f"[SLURM Trigger] sacct output:\n{output}")
+
+            states = {line.strip() for line in output.splitlines() if line.strip()}
+
+            if not states:
+                self.log.warning("No state returned for job %s;", self.job_id)
+                state, final = "AWAITING", True
+
+            elif "COMPLETED" in output:
                 state, final = "COMPLETED", True
             elif "RUNNING" in output:
                 state, final = "RUNNING", False
@@ -42,6 +50,7 @@ class SlurmJobTrigger(BaseTrigger):
                 state, final = "PENDING", False
             else:
                 state, final = "ERROR", True
+                self.log.error(f"Run failed due to: {err_output}")
 
             yield TriggerEvent({
                 "job_id": self.job_id,

@@ -1,7 +1,17 @@
 from airflow.plugins_manager import AirflowPlugin
-from flask_appbuilder import BaseView, expose
+from flask import Blueprint
+from flask_appbuilder import BaseView, expose 
 from airflow.models import XCom
 from airflow.settings import Session
+
+bp = Blueprint(
+    "job_ui",
+    __name__,
+    template_folder="templates",
+    url_prefix="/job-ui"
+)
+
+
 
 class SlurmDashboardView(BaseView):
     default_view = "dashboard"
@@ -56,6 +66,7 @@ class SlurmDashboardView(BaseView):
 
 class SlurmUIPlugin(AirflowPlugin):
     name = "slurm_ui_plugin"
+    flask_blueprints = [bp]
     appbuilder_views = [{
         "name":     "SLURM Dashboard",
         "category": "SLURM",
