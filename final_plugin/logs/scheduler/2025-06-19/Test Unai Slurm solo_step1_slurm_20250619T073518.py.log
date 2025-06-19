@@ -1,0 +1,1007 @@
+[2025-06-19T07:38:47.510+0000] {processor.py:186} INFO - Started process (PID=2291) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:38:47.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:38:47.514+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:38:47.513+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:38:47.526+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:38:47.519+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:38:47.527+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:38:47.547+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.042 seconds
+[2025-06-19T07:39:17.985+0000] {processor.py:186} INFO - Started process (PID=2367) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:39:17.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:39:17.989+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:39:17.989+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:39:17.996+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:39:17.994+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:39:17.997+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:39:18.016+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.037 seconds
+[2025-06-19T07:39:48.245+0000] {processor.py:186} INFO - Started process (PID=2443) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:39:48.246+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:39:48.249+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:39:48.249+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:39:48.256+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:39:48.253+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:39:48.256+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:39:48.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.038 seconds
+[2025-06-19T07:40:18.999+0000] {processor.py:186} INFO - Started process (PID=2519) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:40:19.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:40:19.003+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:40:19.003+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:40:19.012+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:40:19.008+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:40:19.012+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:40:19.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:40:49.585+0000] {processor.py:186} INFO - Started process (PID=2595) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:40:49.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:40:49.590+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:40:49.589+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:40:49.600+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:40:49.597+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:40:49.601+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:40:49.624+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.047 seconds
+[2025-06-19T07:41:19.901+0000] {processor.py:186} INFO - Started process (PID=2671) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:41:19.903+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:41:19.907+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:41:19.907+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:41:19.919+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:41:19.914+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:41:19.920+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:41:19.945+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.067 seconds
+[2025-06-19T07:41:50.455+0000] {processor.py:186} INFO - Started process (PID=2747) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:41:50.456+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:41:50.459+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:41:50.459+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:41:50.467+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:41:50.464+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:41:50.468+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:41:50.489+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.041 seconds
+[2025-06-19T07:42:20.661+0000] {processor.py:186} INFO - Started process (PID=2823) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:42:20.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:42:20.666+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:42:20.666+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:42:20.672+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:42:20.670+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:42:20.673+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:42:20.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.037 seconds
+[2025-06-19T07:42:51.632+0000] {processor.py:186} INFO - Started process (PID=2898) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:42:51.635+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:42:51.639+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:42:51.639+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:42:51.649+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:42:51.646+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:42:51.650+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:42:51.674+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.063 seconds
+[2025-06-19T07:43:21.863+0000] {processor.py:186} INFO - Started process (PID=2974) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:43:21.864+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:43:21.868+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:43:21.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:43:21.876+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:43:21.872+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:43:21.877+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:43:21.896+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:43:52.898+0000] {processor.py:186} INFO - Started process (PID=3049) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:43:52.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:43:52.904+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:43:52.904+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:43:52.913+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:43:52.910+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:43:52.914+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:43:52.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.050 seconds
+[2025-06-19T07:44:23.150+0000] {processor.py:186} INFO - Started process (PID=3124) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:44:23.152+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:44:23.156+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:44:23.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:44:23.166+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:44:23.163+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:44:23.167+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:44:23.190+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.061 seconds
+[2025-06-19T07:44:53.528+0000] {processor.py:186} INFO - Started process (PID=3200) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:44:53.529+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:44:53.532+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:44:53.532+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:44:53.539+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:44:53.536+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:44:53.540+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:44:53.559+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:45:23.748+0000] {processor.py:186} INFO - Started process (PID=3276) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:45:23.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:45:23.753+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:45:23.752+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:45:23.759+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:45:23.757+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:45:23.760+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:45:23.781+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:45:54.001+0000] {processor.py:186} INFO - Started process (PID=3352) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:45:54.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:45:54.005+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:45:54.005+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:45:54.012+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:45:54.010+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:45:54.013+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:45:54.034+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:46:24.546+0000] {processor.py:186} INFO - Started process (PID=3428) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:46:24.548+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:46:24.551+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:46:24.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:46:24.559+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:46:24.556+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:46:24.560+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:46:24.583+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.044 seconds
+[2025-06-19T07:46:54.699+0000] {processor.py:186} INFO - Started process (PID=3504) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:46:54.700+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:46:54.703+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:46:54.703+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:46:54.710+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:46:54.707+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:46:54.712+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:46:54.731+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:47:25.292+0000] {processor.py:186} INFO - Started process (PID=3579) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:47:25.295+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:47:25.301+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:47:25.301+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:47:25.315+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:47:25.310+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:47:25.316+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:47:25.341+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.066 seconds
+[2025-06-19T07:47:56.053+0000] {processor.py:186} INFO - Started process (PID=3655) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:47:56.055+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:47:56.060+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:47:56.059+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:47:56.069+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:47:56.066+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:47:56.070+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:47:56.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.059 seconds
+[2025-06-19T07:48:26.604+0000] {processor.py:186} INFO - Started process (PID=3731) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:48:26.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:48:26.609+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:48:26.608+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:48:26.616+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:48:26.613+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:48:26.616+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:48:26.637+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.039 seconds
+[2025-06-19T07:48:57.487+0000] {processor.py:186} INFO - Started process (PID=3807) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:48:57.489+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:48:57.496+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:48:57.495+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:48:57.506+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:48:57.503+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:48:57.507+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:48:57.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.077 seconds
+[2025-06-19T07:49:28.107+0000] {processor.py:186} INFO - Started process (PID=3883) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:49:28.109+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:49:28.113+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:49:28.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:49:28.121+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:49:28.118+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:49:28.123+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:49:28.147+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.051 seconds
+[2025-06-19T07:49:58.620+0000] {processor.py:186} INFO - Started process (PID=3959) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:49:58.621+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:49:58.627+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:49:58.626+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:49:58.636+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:49:58.633+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:49:58.636+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:49:58.657+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.057 seconds
+[2025-06-19T07:50:29.460+0000] {processor.py:186} INFO - Started process (PID=4035) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:50:29.462+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:50:29.467+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:50:29.467+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:50:29.477+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:50:29.474+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:50:29.478+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:50:29.499+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.061 seconds
+[2025-06-19T07:51:00.028+0000] {processor.py:186} INFO - Started process (PID=4110) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:51:00.029+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:51:00.033+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:51:00.032+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:51:00.040+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:51:00.037+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:51:00.040+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:51:00.062+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.041 seconds
+[2025-06-19T07:51:30.154+0000] {processor.py:186} INFO - Started process (PID=4186) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:51:30.155+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:51:30.159+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:51:30.158+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:51:30.168+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:51:30.165+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:51:30.169+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:51:30.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.047 seconds
+[2025-06-19T07:52:01.479+0000] {processor.py:186} INFO - Started process (PID=4258) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:52:01.480+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:52:01.483+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:52:01.483+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:52:01.489+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:52:01.487+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:52:01.490+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:52:01.514+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.042 seconds
+[2025-06-19T07:52:32.425+0000] {processor.py:186} INFO - Started process (PID=4320) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:52:32.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:52:32.432+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:52:32.432+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:52:32.440+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:52:32.438+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:52:32.441+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:52:32.466+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.048 seconds
+[2025-06-19T07:53:02.566+0000] {processor.py:186} INFO - Started process (PID=4389) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:53:02.568+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:53:02.575+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:53:02.574+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:53:02.591+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:53:02.587+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:53:02.592+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:53:02.621+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.071 seconds
+[2025-06-19T07:53:32.851+0000] {processor.py:186} INFO - Started process (PID=4465) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:53:32.852+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:53:32.855+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:53:32.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:53:32.862+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:53:32.859+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:53:32.864+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:53:32.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.043 seconds
+[2025-06-19T07:54:03.631+0000] {processor.py:186} INFO - Started process (PID=4538) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:54:03.633+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:54:03.636+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:54:03.635+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:54:03.643+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:54:03.640+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:54:03.644+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:54:03.838+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.212 seconds
+[2025-06-19T07:54:33.937+0000] {processor.py:186} INFO - Started process (PID=4612) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:54:33.938+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:54:33.940+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:54:33.940+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:54:33.951+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:54:33.948+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:54:33.952+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:54:33.975+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.044 seconds
+[2025-06-19T07:55:04.427+0000] {processor.py:186} INFO - Started process (PID=4682) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:55:04.429+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:55:04.432+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:55:04.432+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:55:04.441+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:55:04.438+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:55:04.442+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:55:04.464+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.050 seconds
+[2025-06-19T07:55:35.329+0000] {processor.py:186} INFO - Started process (PID=4758) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:55:35.331+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:55:35.336+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:55:35.335+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:55:35.352+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:55:35.344+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:55:35.354+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:55:35.388+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.071 seconds
+[2025-06-19T07:56:05.723+0000] {processor.py:186} INFO - Started process (PID=4834) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:56:05.724+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:56:05.727+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:56:05.727+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:56:05.737+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:56:05.731+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:56:05.739+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:56:05.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.045 seconds
+[2025-06-19T07:56:35.921+0000] {processor.py:186} INFO - Started process (PID=4910) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:56:35.923+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:56:35.926+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:56:35.925+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:56:35.934+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:56:35.930+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:56:35.935+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:56:35.960+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.045 seconds
+[2025-06-19T07:57:06.312+0000] {processor.py:186} INFO - Started process (PID=4985) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:57:06.314+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:57:06.317+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:57:06.316+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:57:06.325+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:57:06.321+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:57:06.326+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:57:06.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.042 seconds
+[2025-06-19T07:57:36.878+0000] {processor.py:186} INFO - Started process (PID=5061) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:57:36.880+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:57:36.883+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:57:36.882+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:57:36.891+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:57:36.887+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:57:36.893+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:57:36.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.047 seconds
+[2025-06-19T07:58:07.478+0000] {processor.py:186} INFO - Started process (PID=5137) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:58:07.479+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:58:07.483+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:58:07.482+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:58:07.493+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:58:07.488+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:58:07.494+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:58:07.516+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.046 seconds
+[2025-06-19T07:58:38.032+0000] {processor.py:186} INFO - Started process (PID=5213) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:58:38.033+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:58:38.036+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:58:38.036+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:58:38.043+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:58:38.041+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:58:38.045+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:58:38.070+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.044 seconds
+[2025-06-19T07:59:08.186+0000] {processor.py:186} INFO - Started process (PID=5290) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:59:08.188+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:59:08.191+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:59:08.190+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:59:08.204+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:59:08.195+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:59:08.205+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:59:08.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.048 seconds
+[2025-06-19T07:59:38.452+0000] {processor.py:186} INFO - Started process (PID=5366) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:59:38.453+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T07:59:38.456+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:59:38.456+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:59:38.463+0000] {logging_mixin.py:190} INFO - [2025-06-19T07:59:38.461+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T07:59:38.464+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T07:59:38.493+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.047 seconds
+[2025-06-19T08:00:08.833+0000] {processor.py:186} INFO - Started process (PID=5442) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:00:08.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:00:08.838+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:00:08.837+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:00:08.847+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:00:08.844+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:00:08.847+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:00:08.872+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.052 seconds
+[2025-06-19T08:00:39.402+0000] {processor.py:186} INFO - Started process (PID=5518) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:00:39.404+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:00:39.408+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:00:39.407+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:00:39.416+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:00:39.413+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:00:39.417+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:00:39.442+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.051 seconds
+[2025-06-19T08:01:09.795+0000] {processor.py:186} INFO - Started process (PID=5594) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:01:09.797+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:01:09.800+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:01:09.799+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:01:09.808+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:01:09.805+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:01:09.809+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:01:09.836+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.047 seconds
+[2025-06-19T08:01:40.252+0000] {processor.py:186} INFO - Started process (PID=5670) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:01:40.253+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:01:40.256+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:01:40.256+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:01:40.265+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:01:40.262+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:01:40.266+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:01:40.289+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.044 seconds
+[2025-06-19T08:02:10.567+0000] {processor.py:186} INFO - Started process (PID=5746) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:02:10.568+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:02:10.571+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:02:10.571+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:02:10.580+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:02:10.577+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:02:10.581+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:02:10.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.059 seconds
+[2025-06-19T08:02:41.274+0000] {processor.py:186} INFO - Started process (PID=5822) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:02:41.278+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:02:41.282+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:02:41.281+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:02:41.303+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:02:41.296+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:02:41.304+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:02:41.349+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.087 seconds
+[2025-06-19T08:03:11.499+0000] {processor.py:186} INFO - Started process (PID=5898) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:03:11.500+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:03:11.504+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:03:11.503+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:03:11.512+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:03:11.509+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:03:11.513+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:03:11.535+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.050 seconds
+[2025-06-19T08:03:41.694+0000] {processor.py:186} INFO - Started process (PID=5974) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:03:41.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:03:41.700+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:03:41.699+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:03:41.706+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:03:41.704+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:03:41.707+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:03:41.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.041 seconds
+[2025-06-19T08:04:12.188+0000] {processor.py:186} INFO - Started process (PID=6050) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:04:12.189+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:04:12.192+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:04:12.191+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:04:12.204+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:04:12.196+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:04:12.204+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:04:12.228+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.047 seconds
+[2025-06-19T08:04:42.591+0000] {processor.py:186} INFO - Started process (PID=6126) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:04:42.592+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:04:42.595+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:04:42.594+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:04:42.603+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:04:42.600+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:04:42.604+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:04:42.627+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.043 seconds
+[2025-06-19T08:05:13.138+0000] {processor.py:186} INFO - Started process (PID=6201) to work on /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:05:13.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py for tasks to queue
+[2025-06-19T08:05:13.144+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:05:13.143+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:05:13.155+0000] {logging_mixin.py:190} INFO - [2025-06-19T08:05:13.151+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py", line 6, in <module>
+    with DAG(
+         ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 593, in __init__
+    validate_key(dag_id)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/helpers.py", line 57, in validate_key
+    raise AirflowException(
+airflow.exceptions.AirflowException: The key 'Test Unai Slurm solo_step1_slurm_20250619T073518' has to be made of alphanumeric characters, dashes, dots and underscores exclusively
+[2025-06-19T08:05:13.156+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py
+[2025-06-19T08:05:13.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Test Unai Slurm solo_step1_slurm_20250619T073518.py took 0.058 seconds

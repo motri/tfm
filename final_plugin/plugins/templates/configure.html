@@ -8,6 +8,8 @@
   <style>
     .workflow-config .card-body { padding: 1rem; }
     .workflow-config .form-group { margin-bottom: 1rem; }
+    /* ocultamos por defecto */
+    .scp-fields { display: none; }
   </style>
 {% endblock %}
 
@@ -18,7 +20,7 @@
       <div class="card-header"><h4>Configuración General del Workflow</h4></div>
       <div class="card-body">
         {% from 'macros/form_fields.html' import text_input %}
-        {{ text_input(None, 'workflow_name',        'Nombre del Workflow',       True) }}
+        {{ text_input(None, 'workflow_name',        'Nombre del Workflow (usa guiones o barras para separar multiple palabras)',       True) }}
         {{ text_input(None, 'workflow_description', 'Descripción',               False) }}
         {{ text_input(None, 'workflow_owner',       'Propietario',               True) }}
         {{ text_input(None, 'workflow_email',       'Email de notificaciones',   False) }}
@@ -58,6 +60,23 @@
             {{ text_input(   idx, 'branch_or_tag','Rama o etiqueta',       False) }}
             {{ text_input(   idx, 'target_path', 'Ruta de staging',         True) }}
             {{ text_input(   idx, 'subdirectory','Subdirectorio (opcional)', False) }}
+            <div class="form-group form-check">
+              <input type="checkbox"
+                     class="form-check-input scp-toggle"
+                     id="step{{idx}}_scp_enabled"
+                     name="step{{idx}}_scp_enabled">
+              <label class="form-check-label"
+                     for="step{{idx}}_scp_enabled">
+                Copiar vía SSH al HPC
+              </label>
+            </div>
+          
+            {# Este contenedor está oculto por defecto #}
+            <div id="scp-fields-{{idx}}" class="scp-fields">
+              {{ select_input(idx, 'scp_conn_id', 'SSH Conn ID (SCP)', options=conn_list('ssh'), required=True) }}
+              {{ text_input( idx, 'dest_path',   'Ruta remota destino',       True) }}
+            </div>
+
           {% elif step.type == 'slurm' %}
             {{ select_input( idx, 'ssh_conn_id', 'Conexión SSH HPC', options=conn_list('ssh'), required=True) }}
             {{ text_input(   idx, 'script',     'Ruta del script .sh',     True) }}
@@ -71,4 +90,26 @@
     <button type="submit" class="btn btn-success">Generar DAGs</button>
   </form>
 </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.scp-toggle').forEach(function(chk) {
+        // extraer el índice del checkbox (p.ej. "0" de "step0_scp_enabled")
+        const idx = chk.id.match(/^step(\d+)_scp_enabled$/)[1];
+        const container = document.getElementById('scp-fields-' + idx);
+
+        // función que muestra/oculta el contenedor
+        function toggle() {
+          container.style.display = chk.checked ? 'block' : 'none';
+        }
+
+        // empatar evento y estado inicial
+        chk.addEventListener('change', toggle);
+        toggle();
+      });
+    });
+  </script>
 {% endblock %}
