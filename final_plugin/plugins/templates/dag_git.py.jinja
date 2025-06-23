@@ -1,6 +1,7 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from airflow.providers.ssh.operators.ssh import SSHOperator
 from datetime import datetime
 
 default_args = {
@@ -11,23 +12,38 @@ default_args = {
 with DAG(
     dag_id='{{ dag_id }}',
     default_args=default_args,
-    schedule_interval=None,
-    catchup=False,
-    tags={{ workflow_tags|tojson }},
+    schedule_interval={% if schedule_interval %}'{{ schedule_interval }}'{% else %}None{% endif %},
+    catchup={{ catchup|default(False) }},
+    tags=[{{ workflow_tags|tojson }}],
 ) as dag:
+
     git_clone = BashOperator(
         task_id='git_clone',
         bash_command=(
-            'git clone '
-            '{% if branch_or_tag %}-b {{ branch_or_tag }} {% endif %}'
-            '{{ repo_url }} {{ target_path }}'
+            'git clone {{ repo_url }} {{ target_path if target_path else "/tmp/repo" }}'
         )
     )
+
+    {% if scp_enabled %}
+    scp_to_hpc = SSHOperator(
+        task_id='scp_to_hpc',
+        ssh_conn_id='{{ scp_conn_id }}',
+        command=(
+            'scp -r {{ target_path if target_path else "/tmp/repo" }} '
+            'umotriko@10.75.0.21:{{ dest_path }}'
+        )
+    )
+    git_clone >> scp_to_hpc
+    {% endif %}
 
     {% if next_dag_id %}
     trigger = TriggerDagRunOperator(
         task_id='trigger_{{ next_dag_id }}',
         trigger_dag_id='{{ next_dag_id }}'
     )
+    {% if scp_enabled %}
+    scp_to_hpc >> trigger
+    {% else %}
     git_clone >> trigger
+    {% endif %}
     {% endif %}
