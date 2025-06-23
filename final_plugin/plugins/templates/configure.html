@@ -8,7 +8,6 @@
   <style>
     .workflow-config .card-body { padding: 1rem; }
     .workflow-config .form-group { margin-bottom: 1rem; }
-    /* ocultamos por defecto */
     .scp-fields { display: none; }
   </style>
 {% endblock %}
@@ -24,21 +23,7 @@
         {{ text_input(None, 'workflow_description', 'Descripción',               False) }}
         {{ text_input(None, 'workflow_owner',       'Propietario',               True) }}
         {{ text_input(None, 'workflow_email',       'Email de notificaciones',   False) }}
-        {{ text_input(None, 'workflow_tags',        'Tags (coma separada)',      False) }}
-
-        <label>Programación</label>
-        <div class="form-group">
-          <select name="schedule_type" class="form-control" required>
-            <option value="manual">Disparo manual</option>
-            <option value="scheduled">Programado</option>
-          </select>
-        </div>
-        {{ text_input(None, 'schedule_interval', 'Intervalo (cron/preset)', False) }}
-        {{ text_input(None, 'start_date',        'Fecha de inicio (YYYY-MM-DD)', False) }}
-        <div class="form-group form-check">
-          <input class="form-check-input" type="checkbox" id="catchup" name="catchup">
-          <label class="form-check-label" for="catchup">Habilitar catchup</label>
-        </div>
+        {{ text_input(None, 'workflow_tags',        'Tags (se puede añadir multiples separados por comas)',      False) }}
       </div>
     </div>
     {% from 'macros/form_fields.html' import text_input, url_input, number_input, select_input, checkbox_input %}
@@ -46,6 +31,30 @@
       {% set idx = loop.index0 %}
       <div class="card mb-3">
         <div class="card-header">Paso {{ loop.index }}: {{ step.type|capitalize }}</div>
+        <label>Programación (programar este paso causara la ejecución de los siguientes)</label>
+        <div class="form-group">
+          <select name="schedule_type" class="form-control" required>
+            <option value="manual">Disparo manual</option>
+            <option value="scheduled">Programado</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="schedule_interval">
+            Intervalo (cron/preset)
+            <a href="https://airflow.apache.org/docs/apache-airflow/2.10.5/authoring-and-scheduling/cron.html"
+               target="_blank"
+               data-bs-toggle="tooltip"
+               title="Haz clic para ver la documentación de cron de Airflow">
+              <i class="fa fa-info-circle"></i>
+            </a>
+          </label>
+          <input type="text" class="form-control" name="schedule_interval" id="schedule_interval">
+        </div>
+        {{ text_input(None, 'start_date',        'Fecha de inicio (YYYY-MM-DD)', False) }}
+        <div class="form-group form-check">
+          <input class="form-check-input" type="checkbox" id="catchup" name="catchup">
+          <label class="form-check-label" for="catchup">Habilitar catchup</label>
+        </div>
         <div class="card-body">
           {% if step.type == 'transfer' %}
             {{ select_input( idx, 'minio_conn_id', 'MinIO Conn ID', options=conn_list('aws'), required=True) }}
@@ -57,9 +66,7 @@
           {% elif step.type == 'git' %}
             {{ select_input( idx, 'repo_type', 'Tipo de repositorio', options=['gitlab','github'], required=True) }}
             {{ url_input(    idx, 'repo_url',  'URL del repositorio',      True) }}
-            {{ text_input(   idx, 'branch_or_tag','Rama o etiqueta',       False) }}
-            {{ text_input(   idx, 'target_path', 'Ruta de staging',         True) }}
-            {{ text_input(   idx, 'subdirectory','Subdirectorio (opcional)', False) }}
+            {{ text_input(   idx, 'target_path', 'Ruta (dejar esto en blanco usara /tmp/repo/ por defecto)',         False) }}
             <div class="form-group form-check">
               <input type="checkbox"
                      class="form-check-input scp-toggle"
@@ -73,8 +80,8 @@
           
             {# Este contenedor está oculto por defecto #}
             <div id="scp-fields-{{idx}}" class="scp-fields">
-              {{ select_input(idx, 'scp_conn_id', 'SSH Conn ID (SCP)', options=conn_list('ssh'), required=True) }}
-              {{ text_input( idx, 'dest_path',   'Ruta remota destino',       True) }}
+              {{ select_input(idx, 'scp_conn_id', 'SSH Conn ID (SCP)', options=conn_list('ssh'), required=False) }}
+              {{ text_input( idx, 'dest_path',   'Ruta remota destino',       False) }}
             </div>
 
           {% elif step.type == 'slurm' %}

@@ -1,5 +1,0 @@
-[2025-06-09T09:19:47.981+0000] {base.py:84} INFO - Retrieving connection 'hpc_ssh'
-[2025-06-09T09:19:47.982+0000] {ssh.py:286} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
-[2025-06-09T09:19:50.114+0000] {slurm_trigger.py:35} INFO - [SLURM 16986] sacct output: State 
-----------
-[2025-06-09T09:19:50.114+0000] {triggerer_job_runner.py:631} INFO - Trigger slurm_async_job/manual__2025-06-09T09:19:42.427942+00:00/submit_slurm/-1/1 (ID 2) fired: TriggerEvent<{'job_id': '16986', 'status': 'ERROR', 'final': True}>
