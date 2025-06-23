@@ -22,8 +22,7 @@ with DAG(
         task_id="git_clone",
         bash_command=(
             'git clone '
-            ''
-            'https://github.com/motri/hello-world /tmp/repo/'
+            'https://github.com/motri/hello-world tmp'
         )
     )
 

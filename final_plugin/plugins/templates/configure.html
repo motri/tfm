@@ -90,26 +90,23 @@
     <button type="submit" class="btn btn-success">Generar DAGs</button>
   </form>
 </div>
-{% endblock %}
 
-{% block scripts %}
-  {{ super() }}
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      document.querySelectorAll('.scp-toggle').forEach(function(chk) {
-        // extraer el índice del checkbox (p.ej. "0" de "step0_scp_enabled")
-        const idx = chk.id.match(/^step(\d+)_scp_enabled$/)[1];
-        const container = document.getElementById('scp-fields-' + idx);
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.scp-toggle').forEach(function(chk) {
+      // extraer el índice del checkbox (p.ej. "0" de "step0_scp_enabled")
+      const idx = chk.id.match(/^step(\d+)_scp_enabled$/)[1];
+      const container = document.getElementById('scp-fields-' + idx);
 
-        // función que muestra/oculta el contenedor
-        function toggle() {
-          container.style.display = chk.checked ? 'block' : 'none';
-        }
+      // función que muestra/oculta el contenedor
+      function toggle() {
+        container.style.display = chk.checked ? 'block' : 'none';
+      }
 
-        // empatar evento y estado inicial
-        chk.addEventListener('change', toggle);
-        toggle();
-      });
+      // empatar evento y estado inicial
+      chk.addEventListener('change', toggle);
+      toggle();
     });
-  </script>
+  });
+</script>
 {% endblock %}

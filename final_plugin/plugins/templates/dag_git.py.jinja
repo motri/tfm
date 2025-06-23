@@ -15,7 +15,7 @@ with DAG(
     catchup=False,
     tags=[{{ workflow_tags|tojson }}]
 ) as dag:
-    git_clone = BashOperator(
+        git_clone = BashOperator(
         task_id='git_clone',
         bash_command=(
             'git clone '
@@ -24,10 +24,29 @@ with DAG(
         )
     )
 
+    {% if scp_enabled %}
+    scp_repo = BashOperator(
+        task_id='scp_repo',
+        bash_command=(
+            'scp -r -o StrictHostKeyChecking=no '
+            '{{ target_path }} '
+            '{{ remote_user }}@{{ remote_host }}:{{ dest_path }}'
+        ),
+        env={
+            'SSHPASS': '{{ ssh_password }}'  # optional if using sshpass or key
+        }
+    )
+    git_clone >> scp_repo
+    {% endif %}
+
     {% if next_dag_id %}
     trigger = TriggerDagRunOperator(
         task_id='trigger_{{ next_dag_id }}',
         trigger_dag_id='{{ next_dag_id }}'
     )
+    {% if scp_enabled %}
+    scp_repo >> trigger
+    {% else %}
     git_clone >> trigger
+    {% endif %}
     {% endif %}
