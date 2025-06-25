@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+
+{% block content %}
+<h1>SLURM DAG Configurator</h1>
+<form method="post">
+    <label for="qos">QoS (optional):</label>
+    <input type="text" name="qos" id="qos"><br><br>
+    
+    <label for="name">Job Name (optional):</label>
+    <input type="text" name="name" id="name"><br><br>
+    
+    <label for="script">Script File (required):</label>
+    <input type="text" name="script" id="script" required placeholder="example.sh"><br><br>
+    
+    <input type="submit" value="Generate DAG">
+</form>
+{% endblock %}

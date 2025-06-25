@@ -1,0 +1,31 @@
+/* plugins/dag_generator_plugin/static/css/builder.css */
+
+/* Ensure each step-card has internal padding and flex layout */
+.step-card .card-body {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* For the unfinished state (dropdown + buttons), stack inputs vertically with little gap */
+  .step-card .step-type-select {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Space out your action buttons */
+  .step-card .finish-step,
+  .step-card .remove-step {
+    margin-left: 0.5rem;
+  }
+  
+  /* Give a bit more breathing room between cards */
+  .step-card {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* If you want the remove button on finished cards aligned to the right */
+  .step-card .card-body > button.remove-step {
+    margin-left: auto;
+  }
+  

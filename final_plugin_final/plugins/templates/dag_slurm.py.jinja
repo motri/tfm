@@ -1,0 +1,29 @@
+{# templates/dag_templates/dag_slurm.py.jinja #}
+from airflow import DAG
+from operators.slurm_operator import SubmitAndMonitorSlurmJobOperator
+from datetime import datetime
+
+with DAG(
+    dag_id='{{ dag_id }}',
+    start_date=datetime({{ start_date_year }}, {{ start_date_month }}, {{ start_date_day }}),
+    schedule_interval=None,
+    catchup=False,
+    tags=[{{ workflow_tags|tojson }}]
+) as dag:
+
+    run_job = SubmitAndMonitorSlurmJobOperator(
+        task_id='submit_slurm',
+        ssh_conn_id='{{ ssh_conn_id }}',
+        sbatch_args='{{ sbatch_args }}',
+        poll_interval={{ poll_interval }},
+    )
+
+    {%- if next_dag_id %}
+    from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+
+    trigger = TriggerDagRunOperator(
+        task_id='trigger_{{ next_dag_id }}',
+        trigger_dag_id='{{ next_dag_id }}'
+    )
+    run_job >> trigger
+    {%- endif %}

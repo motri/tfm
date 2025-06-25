@@ -1,0 +1,52 @@
+from airflow import DAG
+from airflow.operators.bash import BashOperator
+from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from airflow.operators.python import PythonOperator
+from datetime import datetime
+from helpers.transfer import transfer_repo_to_hpc
+
+default_args = {
+    'owner': '{{ owner }}',
+    'start_date': datetime({{ start_date_year }}, {{ start_date_month }}, {{ start_date_day }}),
+}
+
+with DAG(
+    dag_id='{{ dag_id }}',
+    default_args=default_args,
+    schedule_interval={% if schedule_interval %}'{{ schedule_interval }}'{% else %}None{% endif %},
+    catchup={{ catchup|default(False) }},
+    tags=[{{ workflow_tags|tojson }}],
+) as dag:
+
+    git_clone = BashOperator(
+        task_id='git_clone',
+        bash_command=(
+            'rm -rf {{ target_path if target_path else "/tmp/repo" }} && '
+            'git clone {{ repo_url }} {{ target_path if target_path else "/tmp/repo" }}'
+        )
+    )
+
+    {% if scp_enabled %}
+    scp_to_hpc = PythonOperator(
+        task_id='scp_to_hpc',
+        python_callable=transfer_repo_to_hpc,
+        op_kwargs={
+            'ssh_conn_id': '{{ scp_conn_id }}',
+            'local_path': '{{ target_path if target_path else "/tmp/repo" }}',
+            'remote_path': '{{ dest_path if dest_path else "." }}',
+        }
+    )
+    git_clone >> scp_to_hpc
+    {% endif %}
+
+    {% if next_dag_id %}
+    trigger = TriggerDagRunOperator(
+        task_id='trigger_{{ next_dag_id }}',
+        trigger_dag_id='{{ next_dag_id }}'
+    )
+    {% if scp_enabled %}
+    scp_to_hpc >> trigger
+    {% else %}
+    git_clone >> trigger
+    {% endif %}
+    {% endif %}

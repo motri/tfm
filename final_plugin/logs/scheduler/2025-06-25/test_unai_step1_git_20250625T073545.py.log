@@ -502,3 +502,192 @@
 [2025-06-25T08:40:59.911+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:40:59.911+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-06-25T08:40:59.938+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:40:59.938+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
 [2025-06-25T08:40:59.976+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.131 seconds
+[2025-06-25T08:41:30.778+0000] {processor.py:186} INFO - Started process (PID=4941) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:41:30.781+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:41:30.785+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:41:30.785+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:41:30.800+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:41:30.827+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:41:30.827+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:41:30.844+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:41:30.843+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:41:30.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.103 seconds
+[2025-06-25T08:42:01.498+0000] {processor.py:186} INFO - Started process (PID=5012) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:42:01.499+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:42:01.503+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:42:01.502+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:42:01.514+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:42:01.538+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:42:01.538+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:42:01.554+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:42:01.554+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:42:01.576+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.091 seconds
+[2025-06-25T08:42:32.126+0000] {processor.py:186} INFO - Started process (PID=5084) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:42:32.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:42:32.130+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:42:32.130+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:42:32.141+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:42:32.163+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:42:32.162+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:42:32.178+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:42:32.178+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:42:32.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.081 seconds
+[2025-06-25T08:43:03.101+0000] {processor.py:186} INFO - Started process (PID=5155) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:43:03.103+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:43:03.107+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:43:03.107+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:43:03.123+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:43:03.151+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:43:03.151+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:43:03.170+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:43:03.170+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:43:03.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.113 seconds
+[2025-06-25T08:43:33.303+0000] {processor.py:186} INFO - Started process (PID=5226) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:43:33.305+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:43:33.310+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:43:33.310+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:43:33.324+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:43:33.349+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:43:33.347+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:43:33.367+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:43:33.367+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:43:33.390+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.102 seconds
+[2025-06-25T08:44:03.447+0000] {processor.py:186} INFO - Started process (PID=5297) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:44:03.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:44:03.452+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:44:03.451+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:44:03.473+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:44:03.497+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:44:03.497+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:44:03.515+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:44:03.515+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:44:03.537+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.097 seconds
+[2025-06-25T08:44:33.979+0000] {processor.py:186} INFO - Started process (PID=5368) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:44:33.980+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:44:33.984+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:44:33.983+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:44:33.999+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:44:34.027+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:44:34.027+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:44:34.044+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:44:34.044+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:44:34.066+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.096 seconds
+[2025-06-25T08:45:04.602+0000] {processor.py:186} INFO - Started process (PID=5439) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:45:04.604+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:45:04.607+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:45:04.606+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:45:04.617+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:45:04.638+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:45:04.638+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:45:04.655+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:45:04.655+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:45:04.678+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.082 seconds
+[2025-06-25T08:45:35.806+0000] {processor.py:186} INFO - Started process (PID=5501) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:45:35.809+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:45:35.812+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:45:35.812+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:45:35.832+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:45:35.862+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:45:35.862+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:45:35.882+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:45:35.882+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:45:35.905+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.106 seconds
+[2025-06-25T08:46:06.616+0000] {processor.py:186} INFO - Started process (PID=5572) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:46:06.617+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:46:06.620+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:46:06.619+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:46:06.633+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:46:06.656+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:46:06.656+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:46:06.671+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:46:06.671+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:46:06.695+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.086 seconds
+[2025-06-25T08:46:39.148+0000] {processor.py:186} INFO - Started process (PID=5639) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:46:39.149+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:46:39.157+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:46:39.156+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:46:39.177+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:46:39.214+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:46:39.214+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:46:39.237+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:46:39.237+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:46:39.272+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.137 seconds
+[2025-06-25T08:47:09.637+0000] {processor.py:186} INFO - Started process (PID=5708) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:47:09.638+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:47:09.641+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:47:09.640+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:47:09.652+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:47:09.674+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:47:09.674+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:47:09.691+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:47:09.690+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:47:09.714+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.083 seconds
+[2025-06-25T08:47:39.782+0000] {processor.py:186} INFO - Started process (PID=5778) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:47:39.783+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:47:39.786+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:47:39.785+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:47:39.796+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:47:39.815+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:47:39.815+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:47:39.830+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:47:39.830+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:47:39.849+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.073 seconds
+[2025-06-25T08:48:10.039+0000] {processor.py:186} INFO - Started process (PID=5833) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:48:10.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:48:10.043+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:48:10.043+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:48:10.054+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:48:10.074+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:48:10.074+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:48:10.089+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:48:10.088+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:48:10.108+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.075 seconds
+[2025-06-25T08:48:40.342+0000] {processor.py:186} INFO - Started process (PID=5903) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:48:40.343+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:48:40.346+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:48:40.345+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:48:40.356+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:48:40.376+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:48:40.376+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:48:40.391+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:48:40.391+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:48:40.410+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.075 seconds
+[2025-06-25T08:49:10.454+0000] {processor.py:186} INFO - Started process (PID=5973) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:49:10.455+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:49:10.458+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:49:10.457+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:49:10.468+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:49:10.487+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:49:10.487+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:49:10.502+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:49:10.502+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:49:10.520+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.073 seconds
+[2025-06-25T08:49:40.749+0000] {processor.py:186} INFO - Started process (PID=6042) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:49:40.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:49:40.753+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:49:40.752+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:49:40.764+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:49:40.784+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:49:40.783+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:49:40.802+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:49:40.802+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:49:40.823+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.081 seconds
+[2025-06-25T08:50:11.517+0000] {processor.py:186} INFO - Started process (PID=6113) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:50:11.518+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:50:11.523+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:50:11.523+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:50:11.538+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:50:11.566+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:50:11.565+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:50:11.582+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:50:11.581+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:50:11.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.094 seconds
+[2025-06-25T08:50:41.800+0000] {processor.py:186} INFO - Started process (PID=6184) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:50:41.801+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:50:41.804+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:50:41.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:50:41.818+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:50:41.845+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:50:41.845+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:50:41.862+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:50:41.862+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:50:41.888+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.096 seconds
+[2025-06-25T08:51:12.588+0000] {processor.py:186} INFO - Started process (PID=6261) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:51:12.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:51:12.593+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:51:12.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:51:12.606+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:51:12.629+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:51:12.629+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:51:12.646+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:51:12.646+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:51:12.666+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.088 seconds
+[2025-06-25T08:51:42.912+0000] {processor.py:186} INFO - Started process (PID=6332) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:51:42.913+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:51:42.916+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:51:42.916+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:51:42.930+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:51:42.953+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:51:42.953+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:51:42.971+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:51:42.971+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:51:42.994+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.089 seconds
+[2025-06-25T08:52:13.885+0000] {processor.py:186} INFO - Started process (PID=6403) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:52:13.886+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:52:13.890+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:52:13.889+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:52:13.902+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:52:13.925+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:52:13.925+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:52:13.942+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:52:13.942+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:52:13.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.087 seconds
+[2025-06-25T08:52:44.093+0000] {processor.py:186} INFO - Started process (PID=6474) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:52:44.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:52:44.098+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:52:44.097+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:52:44.112+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:52:44.134+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:52:44.133+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:52:44.151+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:52:44.150+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:52:44.173+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.087 seconds
+[2025-06-25T08:53:14.856+0000] {processor.py:186} INFO - Started process (PID=6545) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:53:14.857+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:53:14.860+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:53:14.859+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:53:14.871+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:53:14.895+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:53:14.895+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:53:14.911+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:53:14.910+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:53:14.932+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.087 seconds
+[2025-06-25T08:53:45.193+0000] {processor.py:186} INFO - Started process (PID=6616) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:53:45.195+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:53:45.198+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:53:45.198+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:53:45.209+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:53:45.231+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:53:45.230+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:53:45.248+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:53:45.248+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:53:45.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.088 seconds
+[2025-06-25T08:54:15.973+0000] {processor.py:186} INFO - Started process (PID=6687) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:54:15.974+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:54:15.977+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:54:15.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:54:15.991+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:54:16.015+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:54:16.014+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:54:16.031+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:54:16.031+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:54:16.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.088 seconds
+[2025-06-25T08:54:46.868+0000] {processor.py:186} INFO - Started process (PID=6758) to work on /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:54:46.870+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/test_unai_step1_git_20250625T073545.py for tasks to queue
+[2025-06-25T08:54:46.873+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:54:46.872+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:54:46.890+0000] {processor.py:925} INFO - DAG(s) 'test_unai_step1_git_20250625T073545' retrieved from /opt/airflow/dags/test_unai_step1_git_20250625T073545.py
+[2025-06-25T08:54:46.916+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:54:46.915+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-06-25T08:54:46.935+0000] {logging_mixin.py:190} INFO - [2025-06-25T08:54:46.934+0000] {dag.py:4180} INFO - Setting next_dagrun for test_unai_step1_git_20250625T073545 to None, run_after=None
+[2025-06-25T08:54:46.956+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/test_unai_step1_git_20250625T073545.py took 0.095 seconds
