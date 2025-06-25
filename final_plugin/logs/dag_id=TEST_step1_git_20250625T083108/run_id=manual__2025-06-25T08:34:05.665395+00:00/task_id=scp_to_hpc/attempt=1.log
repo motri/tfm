@@ -1,0 +1,35 @@
+[2025-06-25T08:34:13.717+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-06-25T08:34:13.740+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TEST_step1_git_20250625T083108.scp_to_hpc manual__2025-06-25T08:34:05.665395+00:00 [queued]>
+[2025-06-25T08:34:13.750+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TEST_step1_git_20250625T083108.scp_to_hpc manual__2025-06-25T08:34:05.665395+00:00 [queued]>
+[2025-06-25T08:34:13.751+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-06-25T08:34:13.765+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): scp_to_hpc> on 2025-06-25 08:34:05.665395+00:00
+[2025-06-25T08:34:13.772+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=472) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-06-25T08:34:13.774+0000] {standard_task_runner.py:72} INFO - Started process 474 to run task
+[2025-06-25T08:34:13.775+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'TEST_step1_git_20250625T083108', 'scp_to_hpc', 'manual__2025-06-25T08:34:05.665395+00:00', '--job-id', '376', '--raw', '--subdir', 'DAGS_FOLDER/TEST_step1_git_20250625T083108.py', '--cfg-path', '/tmp/tmpaj484as_']
+[2025-06-25T08:34:13.776+0000] {standard_task_runner.py:105} INFO - Job 376: Subtask scp_to_hpc
+[2025-06-25T08:34:14.077+0000] {task_command.py:467} INFO - Running <TaskInstance: TEST_step1_git_20250625T083108.scp_to_hpc manual__2025-06-25T08:34:05.665395+00:00 [running]> on host 1cabd79ac10f
+[2025-06-25T08:34:14.182+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Unai Motriko' AIRFLOW_CTX_DAG_ID='TEST_step1_git_20250625T083108' AIRFLOW_CTX_TASK_ID='scp_to_hpc' AIRFLOW_CTX_EXECUTION_DATE='2025-06-25T08:34:05.665395+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-06-25T08:34:05.665395+00:00'
+[2025-06-25T08:34:14.183+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-06-25T08:34:14.183+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-06-25T08:34:14.184+0000] {logging_mixin.py:190} INFO - Current task name:scp_to_hpc state:running start_date:2025-06-25 08:34:13.740875+00:00
+[2025-06-25T08:34:14.184+0000] {logging_mixin.py:190} INFO - Dag name:TEST_step1_git_20250625T083108 and current dag run status:running
+[2025-06-25T08:34:14.185+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-06-25T08:34:14.199+0000] {base.py:84} INFO - Retrieving connection 'hpc_ssh'
+[2025-06-25T08:34:14.204+0000] {ssh.py:286} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2025-06-25T08:34:14.260+0000] {transport.py:1944} INFO - Connected (version 2.0, client OpenSSH_8.0)
+[2025-06-25T08:34:14.864+0000] {transport.py:1944} INFO - Authentication (password) successful!
+[2025-06-25T08:34:17.762+0000] {sftp.py:169} INFO - [chan 0] Opened sftp connection (server version 3)
+[2025-06-25T08:34:30.759+0000] {job.py:229} INFO - Heartbeat recovered after 17.10 seconds
+[2025-06-25T08:34:32.367+0000] {sftp.py:169} INFO - [chan 0] sftp session closed.
+[2025-06-25T08:34:32.370+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-06-25T08:34:32.381+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-06-25T08:34:32.382+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=TEST_step1_git_20250625T083108, task_id=scp_to_hpc, run_id=manual__2025-06-25T08:34:05.665395+00:00, execution_date=20250625T083405, start_date=20250625T083413, end_date=20250625T083432
+[2025-06-25T08:34:32.411+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2025-06-25T08:34:32.412+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2025-06-25T08:34:32.414+0000] {logging_mixin.py:190} INFO - Dag name:TEST_step1_git_20250625T083108 queued_at:2025-06-25 08:34:05.957690+00:00
+[2025-06-25T08:34:32.415+0000] {logging_mixin.py:190} INFO - Task hostname:1cabd79ac10f operator:PythonOperator
+[2025-06-25T08:34:32.468+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-06-25T08:34:32.498+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-06-25T08:34:32.500+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
